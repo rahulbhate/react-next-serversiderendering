@@ -22,13 +22,11 @@ function Index({ speakers }) {
   return (
     <>
       {console.log(speakersData.speakers)}
-      {speakersData.speakers.map((speaker, index) => {
-        return (
-          <ul>
-            <li>{speaker.firstName}</li>
-          </ul>
-        );
-      })}
+      <ul>
+        {speakersData.speakers.map((speaker, index) => {
+          return <li key={speaker.id}>{speaker.firstName}</li>;
+        })}
+      </ul>
     </>
   );
 }

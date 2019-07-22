@@ -12016,21 +12016,22 @@ function Index(_ref) {
     console.log('UseEffect LifeCycle Method on Client Side get Called once Server Side Rendering Done');
   }, []); // console.log(speakersData);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, console.log(speakersData.speakers), speakersData.speakers.map(function (speaker, index) {
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, console.log(speakersData.speakers), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, speakersData.speakers.map(function (speaker, index) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
+      key: speaker.id,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 27
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28
-      },
-      __self: this
-    }, speaker.firstName));
-  }));
+    }, speaker.firstName);
+  })));
 }
 
 Index.getInitialProps =
