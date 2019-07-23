@@ -9,8 +9,8 @@ import axios from 'axios';
 
 import { useState, useEffect } from 'react';
 
-function Index({ speakers }) {
-  const [speakersData, setSpeakersData] = useState({ speakers });
+function Index({ speaker }) {
+  const [speakersData, setSpeakersData] = useState({ speaker });
 
   useEffect(() => {
     console.log(
@@ -18,12 +18,18 @@ function Index({ speakers }) {
     );
   }, []);
 
-  // console.log(speakersData);
   return (
     <>
-      {console.log(speakersData.speakers)}
+      <Link href="/about">
+        <a>About Page</a>
+      </Link>
+      <hr />
+      <Link href="/sessions">
+        <a>Sessions Page</a>
+      </Link>
+      {console.log(speakersData.speaker.speakers)}
       <ul>
-        {speakersData.speakers.map((speaker, index) => {
+        {speakersData.speaker.speakers.map((speaker, index) => {
           return <li key={speaker.id}>{speaker.firstName}</li>;
         })}
       </ul>
@@ -32,10 +38,11 @@ function Index({ speakers }) {
 }
 
 Index.getInitialProps = async () => {
-  const res = await fetch('http://localhost:4000/speakers/');
-  const json = await res.json();
+  const respon = await fetch('http://localhost:8080/');
 
-  return { speakers: json };
+  const data = await respon.json();
+
+  return { speaker: data };
 };
 
 export default Index;
