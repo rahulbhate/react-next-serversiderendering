@@ -1421,9 +1421,11 @@ var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\
 
 
 function Index(_ref) {
-  var speaker = _ref.speaker;
+  var user = _ref.user,
+      speaker = _ref.speaker;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({
+    user: user,
     speaker: speaker
   }),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
@@ -1465,10 +1467,25 @@ function Index(_ref) {
       lineNumber: 28
     },
     __self: this
-  }, "Sessions Page")), console.log(speakersData.speaker.speakers), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
+  }, "Sessions Page")), console.log(speakersData.speaker.speakers), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("hr", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("b", {
+    style: {
+      color: '#4CAF50'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Hello, ", user.message, " this message is from server"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
     },
     __self: this
   }, speakersData.speaker.speakers.map(function (speaker, index) {
@@ -1476,7 +1493,7 @@ function Index(_ref) {
       key: speaker.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 37
       },
       __self: this
     }, speaker.firstName);
@@ -1488,7 +1505,7 @@ Index.getInitialProps =
 Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
 /*#__PURE__*/
 _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-  var respon, data;
+  var respon, res, data, data2;
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -1499,15 +1516,26 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
         case 2:
           respon = _context.sent;
           _context.next = 5;
-          return respon.json();
+          return fetch('http://localhost:8080/user/rahul');
 
         case 5:
+          res = _context.sent;
+          _context.next = 8;
+          return respon.json();
+
+        case 8:
           data = _context.sent;
+          _context.next = 11;
+          return res.json();
+
+        case 11:
+          data2 = _context.sent;
           return _context.abrupt("return", {
+            user: data2,
             speaker: data
           });
 
-        case 7:
+        case 13:
         case "end":
           return _context.stop();
       }

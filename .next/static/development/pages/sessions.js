@@ -10081,7 +10081,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js ***!
   \****************************************************************************************************************************************************************/
@@ -10104,5 +10104,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=sessions.js.map
