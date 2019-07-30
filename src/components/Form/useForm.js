@@ -20,8 +20,9 @@ const useForm = (callback) => {
        console.log("Successfull");
       })
     })*/
-    axios.post(`http://localhost:8080/signup`).then((res) => {
+    axios.post(`http://localhost:8080/signup`, { values }).then((res) => {
       console.log(res);
+      console.log(res.data);
     });
     event.target.value = '';
     callback();
