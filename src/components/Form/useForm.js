@@ -10,6 +10,16 @@ const useForm = (callback) => {
 
     console.log(values);
     console.log('******************');
+    /*fetch('http://localhost:8080', {
+      method: 'POST',
+      body: JSON.stringify({
+        email:email,
+        password:password
+      }).then(res => res.json())
+      .then(json =>{
+       console.log("Successfull");
+      })
+    })*/
     axios.post(`http://localhost:8080/signup`).then((res) => {
       console.log(res);
     });
