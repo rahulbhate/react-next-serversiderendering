@@ -4242,7 +4242,7 @@ function Login() {
       lineNumber: 8
     },
     __self: this
-  }, "SignUp Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_Form_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Login Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_Form_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -4506,7 +4506,7 @@ var Input = function Input(props) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Flogin&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Clogin.js ***!
   \**********************************************************************************************************************************************************/
@@ -4529,5 +4529,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=login.js.map

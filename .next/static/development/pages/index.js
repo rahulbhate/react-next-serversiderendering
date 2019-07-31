@@ -68,7 +68,7 @@ function Index() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm-4",
+    className: "col-sm-12",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -80,13 +80,13 @@ function Index() {
       lineNumber: 11
     },
     __self: this
-  }, "About Me"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+  }, "ABOUT US"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, "Photo of me:")))));
+  }, "ABOUT US Amalgamated Australian Investment Group (aaig, the Group or the Company) was established in 2009 to take advantage of the fragmented nature of the Financial Services industry. With our aim being to build an integrated and diversified financial services business by acquiring businesses within this sector as opportunities arise. Since inception, the Group has invested heavily in both domestic and international expansion, successfully completing approximately 15 full and part acquisitions.")))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);

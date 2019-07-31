@@ -1606,6 +1606,7 @@ function Header() {
     },
     __self: this
   }, "ALL YOUR FINANCIAL SERVICES NEEDS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -1618,7 +1619,7 @@ function Header() {
       lineNumber: 11
     },
     __self: this
-  }))), ";");
+  }))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -1853,7 +1854,7 @@ function Menu() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/login",
+    href: "/signup",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
@@ -1866,7 +1867,28 @@ function Menu() {
       lineNumber: 39
     },
     __self: this
-  }, "SignUp")))))));
+  }, "SignUp"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "Login")))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Menu);

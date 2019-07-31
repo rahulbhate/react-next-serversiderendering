@@ -7,9 +7,18 @@ function Index() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-sm-4">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
+          <div className="col-sm-12">
+            <h2>ABOUT US</h2>
+            <p>
+              ABOUT US Amalgamated Australian Investment Group (aaig, the Group
+              or the Company) was established in 2009 to take advantage of the
+              fragmented nature of the Financial Services industry. With our aim
+              being to build an integrated and diversified financial services
+              business by acquiring businesses within this sector as
+              opportunities arise. Since inception, the Group has invested
+              heavily in both domestic and international expansion, successfully
+              completing approximately 15 full and part acquisitions.
+            </p>
           </div>
         </div>
       </div>

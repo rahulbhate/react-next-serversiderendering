@@ -7,11 +7,10 @@ function Header() {
       <div className="jumbotron text-center">
         <h1>Welcome to AAIG</h1>
         <p>ALL YOUR FINANCIAL SERVICES NEEDS</p>
-        <div>
+        <div className="">
           <img src="/static/logo/aiig_logo.png" />
         </div>
       </div>
-      ;
     </>
   );
 }
