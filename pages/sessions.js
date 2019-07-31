@@ -1,6 +1,6 @@
 // This is the Link API
 import React from 'react';
-import Link from 'next/link';
+
 import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,9 +17,6 @@ function Index({ speaker }) {
 
   return (
     <>
-      <Link href="/">
-        <a>Home Page</a>
-      </Link>
       {console.log(speakersData.speaker.sessions)}
 
       <ul>

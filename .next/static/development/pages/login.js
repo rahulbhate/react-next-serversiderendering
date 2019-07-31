@@ -4363,7 +4363,7 @@ var Form = function Form() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     type: 'primary',
-    title: 'Login',
+    title: 'SignUp',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
@@ -4506,7 +4506,7 @@ var Input = function Input(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Flogin&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Clogin.js ***!
   \**********************************************************************************************************************************************************/
@@ -4529,5 +4529,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=login.js.map

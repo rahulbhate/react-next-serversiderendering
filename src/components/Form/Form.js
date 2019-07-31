@@ -32,7 +32,7 @@ const Form = () => {
         onChange={handleChange}
       />
       <div className="col-sm-offset-2 col-sm-10">
-        <Button type={'primary'} title={'Login'} />
+        <Button type={'primary'} title={'SignUp'} />
       </div>
     </form>
   );

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -542,7 +542,7 @@ var Form = function Form() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     type: 'primary',
-    title: 'Login',
+    title: 'SignUp',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
@@ -685,7 +685,7 @@ var Input = function Input(props) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 7:
 /*!******************************!*\
   !*** multi ./pages/login.js ***!
   \******************************/
