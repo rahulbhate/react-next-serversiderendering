@@ -4424,6 +4424,9 @@ var useForm = function useForm(callback) {
     axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/signup", values).then(function (res) {
       console.log(res);
     });
+    axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/login", values).then(function (res) {
+      console.log(res);
+    });
     event.target.value = '';
     callback();
   };

@@ -23,6 +23,9 @@ const useForm = (callback) => {
     axios.post(`http://localhost:8080/signup`, values).then((res) => {
       console.log(res);
     });
+    axios.post(`http://localhost:8080/login`, values).then((res) => {
+      console.log(res);
+    });
     event.target.value = '';
     callback();
   };
