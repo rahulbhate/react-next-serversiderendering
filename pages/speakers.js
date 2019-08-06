@@ -5,7 +5,7 @@ import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import speakerReducer from '../src/reducers/speakerReducer';
-
+import Table from '../src/components/Table/Table';
 import { useState, useEffect, useReducer } from 'react';
 
 function Speakers({ speaker }) {
@@ -27,7 +27,6 @@ function Speakers({ speaker }) {
     <>
       {console.log(speakersData.speaker.speakers)}
       <hr />
-
       <ul>
         {speakersData.speaker.speakers.map((speaker, index) => {
           return <li key={speaker.id}>{speaker.firstName}</li>;

@@ -20,7 +20,13 @@
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/signup": [
+    "/sessions": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ],
+    "/speakers": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
