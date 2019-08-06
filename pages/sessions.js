@@ -3,24 +3,29 @@ import React from 'react';
 
 import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import speakerReducer from '../src/reducers/speakerReducer';
+import { useState, useEffect, useReducer } from 'react';
 
-import { useState, useEffect } from 'react';
-
-function Index({ speaker }) {
-  const [speakersData, setSpeakersData] = useState({ speaker });
-
+function Sessions({ speaker }) {
+  const [sessionData, dispatch] = useReducer(speakerReducer, {
+    speaker,
+  });
   useEffect(() => {
     console.log(
       'UseEffect LifeCycle Method on Client Side get Called once Server Side Rendering Done',
     );
+    dispatch({
+      type: 'setSessionsData',
+      data: sessionData,
+    });
   }, []);
 
   return (
     <>
-      {console.log(speakersData.speaker.sessions)}
+      {console.log(sessionData.speaker.sessions)}
 
       <ul>
-        {speakersData.speaker.sessions.map((session, index) => {
+        {sessionData.speaker.sessions.map((session, index) => {
           return <li key={index}>{session.title}</li>;
         })}
       </ul>
@@ -28,7 +33,7 @@ function Index({ speaker }) {
   );
 }
 
-Index.getInitialProps = async () => {
+Sessions.getInitialProps = async () => {
   const respon = await fetch('http://localhost:8080/sessions');
 
   const jj = await respon.json();
@@ -36,4 +41,4 @@ Index.getInitialProps = async () => {
   return { speaker: jj };
 };
 
-export default Index;
+export default Sessions;

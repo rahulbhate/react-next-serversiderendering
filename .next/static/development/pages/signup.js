@@ -4221,7 +4221,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _src_components_Form_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/Form/Form */ "./src/components/Form/Form.js");
+/* harmony import */ var _src_components_SignUpForm_SignUpForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/SignUpForm/SignUpForm */ "./src/components/SignUpForm/SignUpForm.js");
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\signup.js";
 
 
@@ -4242,7 +4242,7 @@ function Signup() {
       lineNumber: 8
     },
     __self: this
-  }, "SignUp Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_Form_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "SignUp Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_SignUpForm_SignUpForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -4286,166 +4286,6 @@ var Button = function Button(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
-
-/***/ }),
-
-/***/ "./src/components/Form/Form.js":
-/*!*************************************!*\
-  !*** ./src/components/Form/Form.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Input/Input */ "./src/components/Input/Input.js");
-/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/components/Button/Button.js");
-/* harmony import */ var _useForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useForm */ "./src/components/Form/useForm.js");
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Form\\Form.js";
-
-
-
-
-
-var Form = function Form() {
-  var _useForm = Object(_useForm__WEBPACK_IMPORTED_MODULE_3__["default"])(login),
-      values = _useForm.values,
-      handleChange = _useForm.handleChange,
-      handleSubmit = _useForm.handleSubmit;
-
-  function login() {
-    console.log(values);
-    alert('Called Login');
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    onSubmit: handleSubmit,
-    className: "form-horizontal",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    inputType: 'email',
-    title: 'Email',
-    id: 'email',
-    name: 'email',
-    value: values.email,
-    placeholder: 'Enter your email',
-    onChange: handleChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    inputType: 'password',
-    title: 'Password',
-    id: 'password',
-    name: 'password',
-    value: values.password,
-    placeholder: 'Enter your password',
-    onChange: handleChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm-offset-2 col-sm-10",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    type: 'primary',
-    title: 'SignUp',
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Form);
-
-/***/ }),
-
-/***/ "./src/components/Form/useForm.js":
-/*!****************************************!*\
-  !*** ./src/components/Form/useForm.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-
-
-
-
-
-
-var useForm = function useForm(callback) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({}),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
-      values = _useState2[0],
-      setValues = _useState2[1];
-
-  var handleSubmit = function handleSubmit(event) {
-    // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
-    if (event) event.preventDefault();
-    alert('your form is submitted');
-    console.log(values);
-    console.log('******************');
-    /*fetch('http://localhost:8080', {
-      method: 'POST',
-      body: JSON.stringify({
-        email:email,
-        password:password
-      }).then(res => res.json())
-      .then(json =>{
-       console.log("Successfull");
-      })
-    })*/
-
-    axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/signup", values).then(function (res) {
-      console.log(res);
-    });
-    axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/login", values).then(function (res) {
-      console.log(res);
-    });
-    event.target.value = '';
-    callback();
-  };
-
-  var handleChange = function handleChange(event) {
-    event.persist();
-    setValues(function (values) {
-      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, values, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, event.target.name, event.target.value));
-    });
-  };
-
-  return {
-    handleChange: handleChange,
-    handleSubmit: handleSubmit,
-    values: values
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (useForm);
 
 /***/ }),
 
@@ -4509,7 +4349,160 @@ var Input = function Input(props) {
 
 /***/ }),
 
-/***/ 5:
+/***/ "./src/components/SignUpForm/SignUpForm.js":
+/*!*************************************************!*\
+  !*** ./src/components/SignUpForm/SignUpForm.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Input/Input */ "./src/components/Input/Input.js");
+/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/components/Button/Button.js");
+/* harmony import */ var _useForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useForm */ "./src/components/SignUpForm/useForm.js");
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\SignUpForm\\SignUpForm.js";
+
+
+
+
+
+var SignUpForm = function SignUpForm() {
+  var _useForm = Object(_useForm__WEBPACK_IMPORTED_MODULE_3__["default"])(login),
+      values = _useForm.values,
+      handleChange = _useForm.handleChange,
+      handleSubmit = _useForm.handleSubmit;
+
+  function login() {
+    console.log(values);
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    onSubmit: handleSubmit,
+    className: "form-horizontal",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    inputType: 'email',
+    title: 'Email',
+    id: 'email',
+    name: 'email',
+    value: values.email,
+    placeholder: 'Enter your email',
+    onChange: handleChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    inputType: 'password',
+    title: 'Password',
+    id: 'password',
+    name: 'password',
+    value: values.password,
+    placeholder: 'Enter your password',
+    onChange: handleChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-offset-2 col-sm-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    type: 'primary',
+    title: 'SignUp',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SignUpForm);
+
+/***/ }),
+
+/***/ "./src/components/SignUpForm/useForm.js":
+/*!**********************************************!*\
+  !*** ./src/components/SignUpForm/useForm.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+var useForm = function useForm(callback) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({}),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
+      values = _useState2[0],
+      setValues = _useState2[1];
+
+  var handleSubmit = function handleSubmit(event) {
+    // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
+    if (event) event.preventDefault();
+    console.log(values);
+    /*fetch('http://localhost:8080', {
+      method: 'POST',
+      body: JSON.stringify({
+        email:email,
+        password:password
+      }).then(res => res.json())
+      .then(json =>{
+       console.log("Successfull");
+      })
+    })*/
+
+    axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/signup", values).then(function (res) {
+      console.log(res);
+    });
+    callback();
+  };
+
+  var handleChange = function handleChange(event) {
+    event.persist();
+    setValues(function (values) {
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, values, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, event.target.name, event.target.value));
+    });
+  };
+
+  return {
+    handleChange: handleChange,
+    handleSubmit: handleSubmit,
+    values: values
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useForm);
+
+/***/ }),
+
+/***/ 3:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsignup&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csignup.js ***!
   \************************************************************************************************************************************************************/
@@ -4532,5 +4525,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=signup.js.map

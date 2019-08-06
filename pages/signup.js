@@ -1,12 +1,12 @@
 import React from 'react';
 import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from '../src/components/Form/Form';
+import SignUpForm from '../src/components/SignUpForm/SignUpForm';
 function Signup() {
   return (
     <div className="container">
       <h2>SignUp Form</h2>
-      <Form />
+      <SignUpForm />
     </div>
   );
 }

@@ -4,22 +4,30 @@ import React from 'react';
 import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import speakerReducer from '../src/reducers/speakerReducer';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useReducer } from 'react';
 
 function Speakers({ speaker }) {
-  const [speakersData, setSpeakersData] = useState({ speaker });
-
+  const [speakersData, dispatch] = useReducer(speakerReducer, {
+    speaker,
+  });
   useEffect(() => {
     console.log(
       'UseEffect LifeCycle Method on Client Side get Called once Server Side Rendering Done',
     );
+    dispatch({
+      type: 'setSpeakersData',
+      data: speakersData,
+    });
+    console.log('dispatch function called');
   }, []);
 
   return (
     <>
       {console.log(speakersData.speaker.speakers)}
       <hr />
+
       <ul>
         {speakersData.speaker.speakers.map((speaker, index) => {
           return <li key={speaker.id}>{speaker.firstName}</li>;
@@ -32,7 +40,12 @@ function Speakers({ speaker }) {
 Speakers.getInitialProps = async () => {
   const respon = await fetch('http://localhost:8080/speakers');
   const data = await respon.json();
-  return { speaker: data };
+  const error = 'Module Not Found';
+  if (data) {
+    return { speaker: data };
+  } else {
+    return { speaker: error };
+  }
 };
 
 export default Speakers;
