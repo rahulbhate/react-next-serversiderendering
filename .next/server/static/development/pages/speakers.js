@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -554,7 +554,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\speakers.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/speakers.js";
 // This is the Link API
 
 
@@ -668,7 +668,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Pagination\\Pagination.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Pagination/Pagination.js";
 
 
 var Pagination = function Pagination(_ref) {
@@ -743,7 +743,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Pagination_Pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Pagination/Pagination */ "./src/components/Pagination/Pagination.js");
 
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Table\\Table.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Table/Table.js";
 
 
 
@@ -995,14 +995,14 @@ function speakerReducer(state, action) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!*********************************!*\
   !*** multi ./pages/speakers.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\speakers.js */"./pages/speakers.js");
+module.exports = __webpack_require__(/*! /Users/rahulbhate/projects/react-next-serversiderendering/pages/speakers.js */"./pages/speakers.js");
 
 
 /***/ }),

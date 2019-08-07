@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\sessions.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/sessions.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -2283,9 +2283,9 @@ module.exports = window.fetch || (window.fetch = __webpack_require__(/*! unfetch
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fsessions.js!./":
 /*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fsessions.js ***!
   \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2308,12 +2308,12 @@ module.exports = window.fetch || (window.fetch = __webpack_require__(/*! unfetch
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_7aff549c98b978433226 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_829b10deddf10e1653a8 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -3092,7 +3092,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\sessions.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/sessions.js";
 // This is the Link API
 
 
@@ -3202,28 +3202,28 @@ function speakerReducer(state, action) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!****************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js ***!
+  !*** multi next-client-pages-loader?page=%2Fsessions&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fsessions.js ***!
   \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsessions&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fsessions.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fsessions.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_7aff549c98b978433226":
+/***/ "dll-reference dll_829b10deddf10e1653a8":
 /*!*******************************************!*\
-  !*** external "dll_7aff549c98b978433226" ***!
+  !*** external "dll_829b10deddf10e1653a8" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_7aff549c98b978433226;
+module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=sessions.js.map

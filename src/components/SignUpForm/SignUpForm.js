@@ -12,20 +12,20 @@ const SignUpForm = () => {
   return (
     <form onSubmit={handleSubmit} className="form-horizontal">
       <Input
-        inputType={'email'}
+        type={'email'}
         title={'Email'}
         id={'email'}
         name={'email'}
-        value={values.email}
+        value={values.email || ''}
         placeholder={'Enter your email'}
         onChange={handleChange}
       />
       <Input
-        inputType={'password'}
+        type={'password'}
         title={'Password'}
         id={'password'}
         name={'password'}
-        value={values.password}
+        value={values.password || ''}
         placeholder={'Enter your password'}
         onChange={handleChange}
       />

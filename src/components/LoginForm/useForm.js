@@ -1,27 +1,17 @@
-import { useState } from 'react';
+import { useReducer } from 'react';
 import axios from 'axios';
 const useForm = (callback) => {
-  const [values, setValues] = useState({});
+  const [inputValues, setInputValues] = useReducer(
+    (state, newState) => ({ ...state, ...newState }),
+    {}
+  );
+  
 
   const handleSubmit = (event) => {
     // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
     if (event) event.preventDefault();
-    console.log(values);
-
-    /*fetch('http://localhost:8080', {
-      method: 'POST',
-      body: JSON.stringify({
-        email:email,
-        password:password
-      }).then(res => res.json())
-      .then(json =>{
-       console.log("Successfull");
-      })
-    })*/
-    /*axios.post(`http://localhost:8080/signup`, values).then((res) => {
-      console.log(res);
-    });*/
-    axios.post(`http://localhost:8080/login`, values).then((res) => {
+    console.log(inputValues);
+    axios.post(`http://localhost:8080/login`, inputValues).then((res) => {
       console.log(res);
     });
 
@@ -30,16 +20,15 @@ const useForm = (callback) => {
 
   const handleChange = (event) => {
     event.persist();
-    setValues((values) => ({
-      ...values,
-      [event.target.name]: event.target.value,
-    }));
+    const { name, value } = event.target;
+    setInputValues({ [name]: value });
+  
   };
 
   return {
     handleChange,
     handleSubmit,
-    values,
+    inputValues,
   };
 };
 

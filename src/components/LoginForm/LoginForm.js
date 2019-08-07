@@ -4,28 +4,29 @@ import Button from '../Button/Button';
 import useForm from './useForm';
 
 const LgoinForm = () => {
-  const { values, handleChange, handleSubmit } = useForm(login);
+  const { inputValues, handleChange, handleSubmit } = useForm(login);
   function login() {
-    console.log(values);
+    console.log(inputValues);
   }
 
   return (
     <form onSubmit={handleSubmit} className="form-horizontal">
       <Input
-        inputType={'email'}
+        type={'email'}
         title={'Email'}
         id={'email'}
         name={'email'}
-        value={values.email}
+        value={inputValues.email || ''}
         placeholder={'Enter your email'}
         onChange={handleChange}
       />
+      
       <Input
-        inputType={'password'}
+        type={'password'}
         title={'Password'}
         id={'password'}
         name={'password'}
-        value={values.password}
+        value={inputValues.password || ''}
         placeholder={'Enter your password'}
         onChange={handleChange}
       />
