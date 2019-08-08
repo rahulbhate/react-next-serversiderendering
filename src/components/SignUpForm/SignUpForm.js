@@ -4,9 +4,10 @@ import Button from '../Button/Button';
 import useForm from './useForm';
 
 const SignUpForm = () => {
-  const { values, handleChange, handleSubmit } = useForm(login);
+  const { inputValues, handleChange, handleSubmit } = useForm(login);
+
   function login() {
-    console.log(values);
+    console.log(inputValues);
   }
 
   return (
@@ -16,7 +17,7 @@ const SignUpForm = () => {
         title={'Email'}
         id={'email'}
         name={'email'}
-        value={values.email || ''}
+        value={inputValues.email || ''}
         placeholder={'Enter your email'}
         onChange={handleChange}
       />
@@ -25,7 +26,7 @@ const SignUpForm = () => {
         title={'Password'}
         id={'password'}
         name={'password'}
-        value={values.password || ''}
+        value={inputValues.password || ''}
         placeholder={'Enter your password'}
         onChange={handleChange}
       />

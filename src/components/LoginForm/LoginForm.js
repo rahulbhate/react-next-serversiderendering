@@ -20,7 +20,7 @@ const LgoinForm = () => {
         placeholder={'Enter your email'}
         onChange={handleChange}
       />
-      
+
       <Input
         type={'password'}
         title={'Password'}
@@ -31,7 +31,7 @@ const LgoinForm = () => {
         onChange={handleChange}
       />
       <div className="col-sm-offset-2 col-sm-10">
-        <Button type={'primary'} title={'Login'} />
+        <Button title={'Login'} />
       </div>
     </form>
   );
