@@ -8,7 +8,7 @@ function Index() {
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
-            <h2>ABOUT US</h2>
+            <h2>Home Page</h2>
             <p>
               ABOUT US Amalgamated Australian Investment Group (aaig, the Group
               or the Company) was established in 2009 to take advantage of the

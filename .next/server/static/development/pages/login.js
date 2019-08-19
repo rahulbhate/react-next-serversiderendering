@@ -401,7 +401,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _src_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/LoginForm/LoginForm */ "./src/components/LoginForm/LoginForm.js");
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\login.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/login.js";
 
 
 
@@ -447,7 +447,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Button\\Button.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Button/Button.js";
 
 
 var Button = function Button(props) {
@@ -481,7 +481,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Input\\Input.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Input/Input.js";
 
 
 var Input = function Input(props) {
@@ -542,7 +542,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Input/Input */ "./src/components/Input/Input.js");
 /* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/components/Button/Button.js");
 /* harmony import */ var _useForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useForm */ "./src/components/LoginForm/useForm.js");
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\LoginForm\\LoginForm.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/LoginForm/LoginForm.js";
 
 
 
@@ -629,13 +629,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-cookie */ "react-cookie");
+/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_cookie__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
 
 
+
+
+var cookies = new react_cookie__WEBPACK_IMPORTED_MODULE_6__["Cookies"]();
 
 var useForm = function useForm(callback) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
+      token = _useState2[0],
+      setToken = _useState2[1];
+
   var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_3__["useReducer"])(function (state, newState) {
     return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state, newState);
   }, {}),
@@ -648,7 +660,12 @@ var useForm = function useForm(callback) {
     if (event) event.preventDefault();
     console.log(inputValues);
     axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/login", inputValues).then(function (res) {
-      console.log(res);
+      console.log(res.data.token);
+      var token = res.data.token;
+      cookies.set('token', token);
+      setToken(token);
+      console.log(token);
+      next_router__WEBPACK_IMPORTED_MODULE_5___default.a.push('/secret');
     });
     callback();
   };
@@ -679,7 +696,7 @@ var useForm = function useForm(callback) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\login.js */"./pages/login.js");
+module.exports = __webpack_require__(/*! /Users/rahulbhate/projects/react-next-serversiderendering/pages/login.js */"./pages/login.js");
 
 
 /***/ }),
@@ -783,6 +800,17 @@ module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -791,6 +819,17 @@ module.exports = require("isomorphic-unfetch");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-cookie":
+/*!*******************************!*\
+  !*** external "react-cookie" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-cookie");
 
 /***/ })
 

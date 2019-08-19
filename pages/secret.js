@@ -11,14 +11,17 @@ const cookies = new Cookies();
 class Secret extends React.Component {
   onPingCall = async (e) => {
     const token = cookies.get('token');
-
+console.log(token);
     try {
-      const res = await axios.get(serverUrl + '/api/ping', {
+      const res = await axios.post(serverUrl + '/logout', {
+       
         headers: { Authorization: token },
+        
       });
-      console.log(res.data.msg);
+      cookies.remove('token');
+      console.log("this is it................" + res.data.msg);
     } catch (err) {
-      console.log(err.response.data.msg);
+      console.log(err.res.data.msg);
     }
   };
 
@@ -28,7 +31,7 @@ class Secret extends React.Component {
         <h2>Secret page</h2>
         <p>Only accessible via a valid JWT</p>
         <br />
-        <button onClick={(e) => this.onPingCall(e)}>Ping Call</button>
+        <button onClick={(e) => this.onPingCall(e)}>Logout</button>
         <p>Check console for response</p>
       </div>
     );
