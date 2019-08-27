@@ -1,16 +1,18 @@
-import { useReducer, useState,useEffect } from 'react';
+import { useReducer, useState, useEffect } from 'react';
 import axios from 'axios';
 import Router from 'next/router';
 import { Cookies } from 'react-cookie';
 
-const cookies = new Cookies();
+//const cookies = new Cookies();
 const useForm = (callback) => {
-  const [token,setToken] = useState();
+  const [token, setToken] = useState();
   const [inputValues, setInputValues] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
-    {}
+    {},
   );
-  
+  useEffect(() => {
+    console.log('useEffect hook called');
+  });
 
   const handleSubmit = (event) => {
     // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
@@ -19,13 +21,13 @@ const useForm = (callback) => {
     axios.post(`http://localhost:8080/login`, inputValues).then((res) => {
       console.log(res.data.token);
       const token = res.data.token;
-    cookies.set('token', token);
-    setToken(token);
-    console.log(token);
-    
-    
+      // cookies.set('token', token);
+      localStorage.setItem('rememberMe', token);
+      setToken(token);
+      console.log(token);
+
       Router.push('/secret');
-    })
+    });
 
     callback();
   };
@@ -34,7 +36,6 @@ const useForm = (callback) => {
     event.persist();
     const { name, value } = event.target;
     setInputValues({ [name]: value });
-  
   };
 
   return {

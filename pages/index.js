@@ -1,5 +1,6 @@
 // This is the Link API
 import React from 'react';
+import Auth from '../utils/auth';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Button from 'react-reusable-components/src/components/Button/Button';
 function Index() {
@@ -26,4 +27,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Auth(Index);
