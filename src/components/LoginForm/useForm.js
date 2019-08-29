@@ -1,9 +1,7 @@
 import { useReducer, useState, useEffect } from 'react';
 import axios from 'axios';
 import Router from 'next/router';
-import { Cookies } from 'react-cookie';
 
-//const cookies = new Cookies();
 const useForm = (callback) => {
   const [token, setToken] = useState();
   const [inputValues, setInputValues] = useReducer(
@@ -21,7 +19,6 @@ const useForm = (callback) => {
     axios.post(`http://localhost:8080/login`, inputValues).then((res) => {
       console.log(res.data.token);
       const token = res.data.token;
-      // cookies.set('token', token);
       localStorage.setItem('rememberMe', token);
       setToken(token);
       console.log(token);

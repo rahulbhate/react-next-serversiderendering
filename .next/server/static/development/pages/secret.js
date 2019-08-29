@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -656,13 +656,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-cookie */ "react-cookie");
-/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_cookie__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _utils_auth__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/auth */ "./utils/auth.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var q__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! q */ "q");
-/* harmony import */ var q__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(q__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _utils_auth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/auth */ "./utils/auth.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -671,10 +667,7 @@ var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\
 
 
 
-
-
-var serverUrl = 'http://localhost:8080'; // set up cookies
-//const cookies = new Cookies();
+var serverUrl = 'http://localhost:8080';
 
 function Secret() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(),
@@ -688,7 +681,6 @@ function Secret() {
       setToken = _useState4[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
-    //const token = cookies.get('token');
     var token = localStorage.getItem('rememberMe');
     console.log(token);
 
@@ -715,8 +707,7 @@ function Secret() {
             case 0:
               _context.next = 2;
               return axios__WEBPACK_IMPORTED_MODULE_4___default.a.post(serverUrl + '/logout', {}).then(function (res) {
-                console.log(res); //cookies.remove(token);
-
+                console.log(res);
                 setToken('');
                 localStorage.removeItem('rememberMe');
                 console.log('token has been removed');
@@ -740,82 +731,38 @@ function Secret() {
   return isAuthenticated ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 39
     },
     __self: this
   }, ' ', react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 41
     },
     __self: this
   }, "This is secret page"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
     onClick: logout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 42
     },
     __self: this
   }, "Logout")) : react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 46
     },
     __self: this
   }, "You are not authorized user"));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_utils_auth__WEBPACK_IMPORTED_MODULE_6__["default"])(Secret));
-/*class Secret extends React.Component {
-  onPingCall = async (e) => {
-    const token = cookies.get('token');
-    console.log(token);
-
-    await axios
-      .post(serverUrl + '/logout', {})
-      .then((res) => {
-        console.log(res);
-        cookies.remove(token);
-        console.log('token has been removed');
-        Router.push('/login');
-      })
-      .then((error) => {
-        console.log(error);
-      });
-  };
-
-  render() {
-    return (
-      <div>
-        <h2>Secret page</h2>
-        <p>Only accessible via a valid JWT</p>
-        <br />
-        <button onClick={(e) => this.onPingCall(e)}>Logout</button>
-        <p>Check console for response</p>
-      </div>
-    );
-  }
-}
-
-// Server-Side Rendering
-Secret.getInitialProps = async (ctx) => {
-  // Must validate JWT
-  // If the JWT is invalid it must redirect
-  // back to the main page. You can do that
-  // with Router from 'next/router
-  await Auth(ctx);
-
-  // Must return an object
-  return {};
-};
-
-export default Auth(Secret);*/
+/* harmony default export */ __webpack_exports__["default"] = (Object(_utils_auth__WEBPACK_IMPORTED_MODULE_5__["default"])(Secret));
 
 /***/ }),
 
@@ -906,7 +853,7 @@ var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!*******************************!*\
   !*** multi ./pages/secret.js ***!
   \*******************************/
@@ -1050,17 +997,6 @@ module.exports = require("next/router");
 
 /***/ }),
 
-/***/ "q":
-/*!********************!*\
-  !*** external "q" ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("q");
-
-/***/ }),
-
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -1069,17 +1005,6 @@ module.exports = require("q");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-cookie":
-/*!*******************************!*\
-  !*** external "react-cookie" ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-cookie");
 
 /***/ }),
 

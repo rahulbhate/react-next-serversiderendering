@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -631,15 +631,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-cookie */ "react-cookie");
-/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_cookie__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
 
 
 
- //const cookies = new Cookies();
 
 var useForm = function useForm(callback) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(),
@@ -664,8 +661,7 @@ var useForm = function useForm(callback) {
     console.log(inputValues);
     axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/login", inputValues).then(function (res) {
       console.log(res.data.token);
-      var token = res.data.token; // cookies.set('token', token);
-
+      var token = res.data.token;
       localStorage.setItem('rememberMe', token);
       setToken(token);
       console.log(token);
@@ -693,7 +689,7 @@ var useForm = function useForm(callback) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 7:
 /*!******************************!*\
   !*** multi ./pages/login.js ***!
   \******************************/
@@ -823,17 +819,6 @@ module.exports = require("next/router");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-cookie":
-/*!*******************************!*\
-  !*** external "react-cookie" ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-cookie");
 
 /***/ })
 
