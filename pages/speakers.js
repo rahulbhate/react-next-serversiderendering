@@ -1,6 +1,6 @@
 // This is the Link API
 import React from 'react';
-
+import withAuth from '../utils/withAuth';
 import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
@@ -37,7 +37,7 @@ function Speakers({ speaker }) {
 }
 
 Speakers.getInitialProps = async () => {
-  const respon = await fetch('http://localhost:8080/speakers');
+  const respon = await fetch('http://localhost:8000/speakers');
   const data = await respon.json();
   const error = 'Module Not Found';
   if (data) {
@@ -47,4 +47,4 @@ Speakers.getInitialProps = async () => {
   }
 };
 
-export default Speakers;
+export default withAuth(Speakers);

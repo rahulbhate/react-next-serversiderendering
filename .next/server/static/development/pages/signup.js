@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -101,17 +101,6 @@ module.exports =
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "core-js/library/fn/array/is-array");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/date/now.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/date/now */ "core-js/library/fn/date/now");
 
 /***/ }),
 
@@ -196,24 +185,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function _arrayWithHoles(arr) {
   if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) return arr;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
 }
 
 /***/ }),
@@ -414,10 +385,10 @@ function _slicedToArray(arr, i) {
 
 /***/ }),
 
-/***/ "./pages/login.js":
-/*!************************!*\
-  !*** ./pages/login.js ***!
-  \************************/
+/***/ "./pages/signup.js":
+/*!*************************!*\
+  !*** ./pages/signup.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -429,37 +400,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _src_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/LoginForm/LoginForm */ "./src/components/LoginForm/LoginForm.js");
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\login.js";
+/* harmony import */ var _src_components_SignUpForm_SignUpForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/SignUpForm/SignUpForm */ "./src/components/SignUpForm/SignUpForm.js");
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\signup.js";
 
 
 
 
 
-function Login() {
+function Signup() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
-  }, "Login Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "SignUp Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_SignUpForm_SignUpForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Login);
+/* harmony default export */ __webpack_exports__["default"] = (Signup);
 
 /***/ }),
 
@@ -557,10 +528,10 @@ var Input = function Input(props) {
 
 /***/ }),
 
-/***/ "./src/components/LoginForm/LoginForm.js":
-/*!***********************************************!*\
-  !*** ./src/components/LoginForm/LoginForm.js ***!
-  \***********************************************/
+/***/ "./src/components/SignUpForm/SignUpForm.js":
+/*!*************************************************!*\
+  !*** ./src/components/SignUpForm/SignUpForm.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -570,14 +541,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Input/Input */ "./src/components/Input/Input.js");
 /* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/components/Button/Button.js");
-/* harmony import */ var _useForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useForm */ "./src/components/LoginForm/useForm.js");
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\LoginForm\\LoginForm.js";
+/* harmony import */ var _useForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useForm */ "./src/components/SignUpForm/useForm.js");
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\SignUpForm\\SignUpForm.js";
 
 
 
 
 
-var LgoinForm = function LgoinForm() {
+var SignUpForm = function SignUpForm() {
   var _useForm = Object(_useForm__WEBPACK_IMPORTED_MODULE_3__["default"])(login),
       inputValues = _useForm.inputValues,
       handleChange = _useForm.handleChange,
@@ -592,7 +563,7 @@ var LgoinForm = function LgoinForm() {
     className: "form-horizontal",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -605,7 +576,7 @@ var LgoinForm = function LgoinForm() {
     onChange: handleChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -629,7 +600,8 @@ var LgoinForm = function LgoinForm() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: 'Login',
+    type: 'primary',
+    title: 'SignUp',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
@@ -638,14 +610,14 @@ var LgoinForm = function LgoinForm() {
   })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (LgoinForm);
+/* harmony default export */ __webpack_exports__["default"] = (SignUpForm);
 
 /***/ }),
 
-/***/ "./src/components/LoginForm/useForm.js":
-/*!*********************************************!*\
-  !*** ./src/components/LoginForm/useForm.js ***!
-  \*********************************************/
+/***/ "./src/components/SignUpForm/useForm.js":
+/*!**********************************************!*\
+  !*** ./src/components/SignUpForm/useForm.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -658,11 +630,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _utils_AuthHelperMethods__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../utils/AuthHelperMethods */ "./utils/AuthHelperMethods.js");
-
-
 
 
 
@@ -670,13 +637,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var useForm = function useForm(callback) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
-      token = _useState2[0],
-      setToken = _useState2[1];
-
-  var Auth = new _utils_AuthHelperMethods__WEBPACK_IMPORTED_MODULE_6__["default"]();
-
   var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_3__["useReducer"])(function (state, newState) {
     return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state, newState);
   }, {}),
@@ -684,25 +644,13 @@ var useForm = function useForm(callback) {
       inputValues = _useReducer2[0],
       setInputValues = _useReducer2[1];
 
-  Object(react__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
-    console.log('useEffect hook called');
-  });
-
   var handleSubmit = function handleSubmit(event) {
-    console.log('Handle Submit Called'); // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
-
+    // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
     if (event) event.preventDefault();
     console.log(inputValues);
-    Auth.login(inputValues);
-    /*axios.post(`http://localhost:8080/login`, inputValues).then((res) => {
-      console.log(res.data.token);
-      const token = res.data.token;
-      localStorage.setItem('rememberMe', token);
-      setToken(token);
-      console.log(token);
-      Router.push('/secret');
-    });*/
-
+    axios__WEBPACK_IMPORTED_MODULE_4___default.a.post("http://localhost:8080/signup", inputValues).then(function (res) {
+      console.log(res);
+    });
     callback();
   };
 
@@ -725,145 +673,14 @@ var useForm = function useForm(callback) {
 
 /***/ }),
 
-/***/ "./utils/AuthHelperMethods.js":
-/*!************************************!*\
-  !*** ./utils/AuthHelperMethods.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AuthHelperMethods; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/date/now */ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jwt-decode */ "jwt-decode");
-/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jwt_decode__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-
-
-
-
-
-var AuthHelperMethods = // Initializing important variables
-function AuthHelperMethods(domain) {//THIS LINE IS ONLY USED WHEN YOU'RE IN PRODUCTION MODE!
-  // this.domain = domain || 'http://localhost:3000'; // API server domain
-
-  var _this = this;
-
-  Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, AuthHelperMethods);
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "login", function (inputValues) {
-    // Get a token from api server using the fetch api
-    axios__WEBPACK_IMPORTED_MODULE_5___default.a.post("http://localhost:8000/login", inputValues).then(function (res) {
-      console.log(res.data.token);
-      var token = res.data.token;
-      localStorage.setItem('rememberMe', token); //setToken(token);
-
-      console.log(token);
-      next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push('/secret');
-    });
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "loggedIn", function () {
-    // Checks if there is a saved token and it's still valid
-    var token = _this.getToken(); // Getting token from localstorage
-
-
-    console.log(token);
-    return !!token && !_this.isTokenExpired(token); // handwaiving here
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "isTokenExpired", function (token) {
-    try {
-      var decoded = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
-
-      if (decoded.exp < _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1___default()() / 1000) {
-        // Checking if token is expired.
-        console.log('isToken Expired function called');
-        return true;
-      } else return false;
-    } catch (err) {
-      console.log('expired check failed! Line 42: AuthService.js');
-      return false;
-    }
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "setToken", function (idToken) {
-    // Saves user token to localStorage
-    localStorage.setItem('rememberMe', idToken);
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "getToken", function () {
-    // Retrieves the user token from localStorage
-    return localStorage.getItem('rememberMe');
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "logout", function () {
-    // Clear user token and profile data from localStorage
-    localStorage.removeItem('id_token');
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "getConfirm", function () {
-    // Using jwt-decode npm package to decode the token
-    var answer = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(_this.getToken());
-    console.log('Recieved answer!');
-    return answer;
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "fetch", function (url, options) {
-    // performs api calls sending the required authentication headers
-    var headers = {
-      Accept: 'application/json',
-      'Content-Type': 'application/json'
-    }; // Setting Authorization header
-    // Authorization: Bearer xxxxxxx.xxxxxxxx.xxxxxx
-
-    if (_this.loggedIn()) {
-      headers['Authorization'] = 'Bearer ' + _this.getToken();
-    }
-
-    return fetch(url, Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      headers: headers
-    }, options)).then(_this._checkStatus).then(function (response) {
-      return response.data.json();
-    }).then(error);
-  });
-
-  Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "_checkStatus", function (response) {
-    // raises an error in case response status is not a success
-    if (response.status == 200) {
-      // Success status lies between 200 to 300
-      return response;
-    } else {
-      var error = new Error(response.statusText);
-      error.response = response;
-      throw error;
-    }
-  });
-};
-
-
-
-/***/ }),
-
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/login.js ***!
-  \******************************/
+/***/ 5:
+/*!*******************************!*\
+  !*** multi ./pages/signup.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\login.js */"./pages/login.js");
+module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\signup.js */"./pages/signup.js");
 
 
 /***/ }),
@@ -887,17 +704,6 @@ module.exports = require("axios");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/array/is-array");
-
-/***/ }),
-
-/***/ "core-js/library/fn/date/now":
-/*!**********************************************!*\
-  !*** external "core-js/library/fn/date/now" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/date/now");
 
 /***/ }),
 
@@ -978,28 +784,6 @@ module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
-/***/ "jwt-decode":
-/*!*****************************!*\
-  !*** external "jwt-decode" ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("jwt-decode");
-
-/***/ }),
-
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
-
-/***/ }),
-
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -1012,4 +796,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=login.js.map
+//# sourceMappingURL=signup.js.map

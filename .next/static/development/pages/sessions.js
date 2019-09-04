@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\login.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\sessions.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -381,39 +381,6 @@ function _defineProperty(obj, key, value) {
   }
 
   return obj;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
-
-function _extends() {
-  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
 }
 
 /***/ }),
@@ -6946,21 +6913,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flogin&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Clogin.js!./":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flogin&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Clogin.js ***!
-  \******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js!./":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js ***!
+  \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/login", function() {
-      var page = __webpack_require__(/*! ./pages/login.js */ "./pages/login.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/sessions", function() {
+      var page = __webpack_require__(/*! ./pages/sessions.js */ "./pages/sessions.js")
       if(true) {
-        module.hot.accept(/*! ./pages/login.js */ "./pages/login.js", function() {
-          if(!next.router.components["/login"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/login.js */ "./pages/login.js")
-          next.router.update("/login", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/sessions.js */ "./pages/sessions.js", function() {
+          if(!next.router.components["/sessions"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/sessions.js */ "./pages/sessions.js")
+          next.router.update("/sessions", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -10668,253 +10635,32 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/login.js":
-/*!************************!*\
-  !*** ./pages/login.js ***!
-  \************************/
+/***/ "./pages/sessions.js":
+/*!***************************!*\
+  !*** ./pages/sessions.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _src_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/LoginForm/LoginForm */ "./src/components/LoginForm/LoginForm.js");
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\login.js";
-
-
-
-
-
-function Login() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "Login Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Login);
-
-/***/ }),
-
-/***/ "./src/components/Button/Button.js":
-/*!*****************************************!*\
-  !*** ./src/components/Button/Button.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Button\\Button.js";
-
-
-var Button = function Button(props) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    style: props.style,
-    className: props.type === 'primary' ? 'btn btn-danger' : 'btn btn-secondary'
-  }, props, {
-    onClick: props.action,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), props.title);
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Button);
-
-/***/ }),
-
-/***/ "./src/components/Input/Input.js":
-/*!***************************************!*\
-  !*** ./src/components/Input/Input.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Input\\Input.js";
-
-
-var Input = function Input(props) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    htmlFor: props.name,
-    className: "control-label col-sm-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, props.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-sm-10",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: "form-control",
-    id: props.name,
-    name: props.name,
-    type: props.type,
-    value: props.value,
-    placeholder: props.placeholder,
-    required: true
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Input);
-
-/***/ }),
-
-/***/ "./src/components/LoginForm/LoginForm.js":
-/*!***********************************************!*\
-  !*** ./src/components/LoginForm/LoginForm.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Input/Input */ "./src/components/Input/Input.js");
-/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/components/Button/Button.js");
-/* harmony import */ var _useForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useForm */ "./src/components/LoginForm/useForm.js");
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\LoginForm\\LoginForm.js";
-
-
-
-
-
-var LgoinForm = function LgoinForm() {
-  var _useForm = Object(_useForm__WEBPACK_IMPORTED_MODULE_3__["default"])(login),
-      inputValues = _useForm.inputValues,
-      handleChange = _useForm.handleChange,
-      handleSubmit = _useForm.handleSubmit;
-
-  function login() {
-    console.log(inputValues);
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    onSubmit: handleSubmit,
-    className: "form-horizontal",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    type: 'email',
-    title: 'Email',
-    id: 'email',
-    name: 'email',
-    value: inputValues.email || '',
-    placeholder: 'Enter your email',
-    onChange: handleChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    type: 'password',
-    title: 'Password',
-    id: 'password',
-    name: 'password',
-    value: inputValues.password || '',
-    placeholder: 'Enter your password',
-    onChange: handleChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm-offset-2 col-sm-10",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: 'Login',
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (LgoinForm);
-
-/***/ }),
-
-/***/ "./src/components/LoginForm/useForm.js":
-/*!*********************************************!*\
-  !*** ./src/components/LoginForm/useForm.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _utils_AuthHelperMethods__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../utils/AuthHelperMethods */ "./utils/AuthHelperMethods.js");
+/* harmony import */ var _utils_withAuth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/withAuth */ "./utils/withAuth.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _src_reducers_speakerReducer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/reducers/speakerReducer */ "./src/reducers/speakerReducer.js");
+
+
+
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\sessions.js";
+// This is the Link API
 
 
 
@@ -10922,60 +10668,105 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+function Sessions(_ref) {
+  var speaker = _ref.speaker;
 
-var useForm = function useForm(callback) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
-      token = _useState2[0],
-      setToken = _useState2[1];
-
-  var Auth = new _utils_AuthHelperMethods__WEBPACK_IMPORTED_MODULE_6__["default"]();
-
-  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_3__["useReducer"])(function (state, newState) {
-    return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state, newState);
-  }, {}),
+  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_3__["useReducer"])(_src_reducers_speakerReducer__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    speaker: speaker
+  }),
       _useReducer2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useReducer, 2),
-      inputValues = _useReducer2[0],
-      setInputValues = _useReducer2[1];
+      sessionData = _useReducer2[0],
+      dispatch = _useReducer2[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
-    console.log('useEffect hook called');
-  });
+    console.log('UseEffect LifeCycle Method on Client Side get Called once Server Side Rendering Done');
+    dispatch({
+      type: 'setSessionsData',
+      data: sessionData
+    });
+  }, []);
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, console.log(sessionData.speaker.sessions), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, sessionData.speaker.sessions.map(function (session, index) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
+      key: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, session.title);
+  })));
+}
 
-  var handleSubmit = function handleSubmit(event) {
-    console.log('Handle Submit Called'); // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
+Sessions.getInitialProps =
+/*#__PURE__*/
+Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+/*#__PURE__*/
+_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+  var respon, jj;
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return fetch('http://localhost:8000/sessions');
 
-    if (event) event.preventDefault();
-    console.log(inputValues);
-    Auth.login(inputValues);
-    /*axios.post(`http://localhost:8080/login`, inputValues).then((res) => {
-      console.log(res.data.token);
-      const token = res.data.token;
-      localStorage.setItem('rememberMe', token);
-      setToken(token);
-      console.log(token);
-      Router.push('/secret');
-    });*/
+        case 2:
+          respon = _context.sent;
+          _context.next = 5;
+          return respon.json();
 
-    callback();
-  };
+        case 5:
+          jj = _context.sent;
+          return _context.abrupt("return", {
+            speaker: jj
+          });
 
-  var handleChange = function handleChange(event) {
-    event.persist();
-    var _event$target = event.target,
-        name = _event$target.name,
-        value = _event$target.value;
-    setInputValues(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name, value));
-  };
+        case 7:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _callee);
+}));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_utils_withAuth__WEBPACK_IMPORTED_MODULE_4__["default"])(Sessions));
 
-  return {
-    handleChange: handleChange,
-    handleSubmit: handleSubmit,
-    inputValues: inputValues
-  };
-};
+/***/ }),
 
-/* harmony default export */ __webpack_exports__["default"] = (useForm);
+/***/ "./src/reducers/speakerReducer.js":
+/*!****************************************!*\
+  !*** ./src/reducers/speakerReducer.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function speakerReducer(state, action) {
+  switch (action.type) {
+    case 'setSpeakersData':
+      {
+        console.log('setSpeakersData action type called');
+        return action.data;
+      }
+
+    case 'setSessionsData':
+      {
+        console.log('setSessionsData action type called');
+        return action.data;
+      }
+
+    default:
+      return state;
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (speakerReducer);
 
 /***/ }),
 
@@ -11110,14 +10901,138 @@ function AuthHelperMethods(domain) {//THIS LINE IS ONLY USED WHEN YOU'RE IN PROD
 
 /***/ }),
 
-/***/ 1:
-/*!**********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Flogin&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Clogin.js ***!
-  \**********************************************************************************************************************************************************/
+/***/ "./utils/withAuth.js":
+/*!***************************!*\
+  !*** ./utils/withAuth.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return withAuth; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _AuthHelperMethods__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./AuthHelperMethods */ "./utils/AuthHelperMethods.js");
+
+
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\utils\\withAuth.js";
+
+
+
+/* A higher order component is frequently written as a function that returns a class. */
+
+function withAuth(AuthComponent) {
+  var _temp;
+
+  var Auth = new _AuthHelperMethods__WEBPACK_IMPORTED_MODULE_9__["default"]();
+  return _temp =
+  /*#__PURE__*/
+  function (_Component) {
+    Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(AuthWrapped, _Component);
+
+    function AuthWrapped() {
+      var _getPrototypeOf2;
+
+      var _this;
+
+      Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, AuthWrapped);
+
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(AuthWrapped)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+      Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+        confirm: null,
+        loaded: false
+      });
+
+      return _this;
+    }
+
+    Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(AuthWrapped, [{
+      key: "componentDidMount",
+
+      /* In the componentDid<ount, we would want to do a couple of important tasks in order to verify the current users authentication status
+      prior to granting them enterance into the app. */
+      value: function componentDidMount() {
+        if (!Auth.loggedIn()) {
+          next_router__WEBPACK_IMPORTED_MODULE_8___default.a.push('/login');
+        } else {
+          /* Try to get confirmation message from the Auth helper. */
+          try {
+            var confirm = Auth.getConfirm();
+            console.log('confirmation is:', confirm);
+            this.setState({
+              confirm: confirm,
+              loaded: true
+            });
+          } catch (err) {
+            /* Oh snap! Looks like there's an error so we'll print it out and log the user out for security reasons. */
+            console.log(err);
+            Auth.logout();
+            this.props.history.replace('/login');
+          }
+        }
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        if (this.state.loaded == true) {
+          if (this.state.confirm) {
+            console.log('confirmed!');
+            return (
+              /* component that is currently being wrapper(App.js) */
+              react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(AuthComponent, {
+                history: this.props.history,
+                confirm: this.state.confirm,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 44
+                },
+                __self: this
+              })
+            );
+          } else {
+            console.log('not confirmed!');
+            return null;
+          }
+        } else {
+          return null;
+        }
+      }
+    }]);
+
+    return AuthWrapped;
+  }(react__WEBPACK_IMPORTED_MODULE_7__["Component"]), _temp;
+}
+
+/***/ }),
+
+/***/ 5:
+/*!****************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Flogin&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Clogin.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flogin&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Clogin.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsessions&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Csessions.js!./");
 
 
 /***/ }),
@@ -11133,5 +11048,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=login.js.map
+},[[5,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=sessions.js.map
