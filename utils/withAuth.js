@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Router from 'next/router';
 import AuthHelperMethods from './AuthHelperMethods';
 
 /* A higher order component is frequently written as a function that returns a class. */
@@ -15,7 +16,7 @@ export default function withAuth(AuthComponent) {
     prior to granting them enterance into the app. */
     componentDidMount() {
       if (!Auth.loggedIn()) {
-        this.props.history.replace('/login');
+        Router.push('/login');
       } else {
         /* Try to get confirmation message from the Auth helper. */
         try {
