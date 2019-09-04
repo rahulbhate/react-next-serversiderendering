@@ -6,11 +6,11 @@ export default class AuthHelperMethods {
   // Initializing important variables
   constructor(domain) {
     //THIS LINE IS ONLY USED WHEN YOU'RE IN PRODUCTION MODE!
-    this.domain = domain || 'http://localhost:3000'; // API server domain
+    // this.domain = domain || 'http://localhost:3000'; // API server domain
   }
   login = (inputValues) => {
     // Get a token from api server using the fetch api
-    axios.post(`http://localhost:8080/login`, inputValues).then((res) => {
+    axios.post(`http://localhost:8000/login`, inputValues).then((res) => {
       console.log(res.data.token);
       const token = res.data.token;
       localStorage.setItem('rememberMe', token);

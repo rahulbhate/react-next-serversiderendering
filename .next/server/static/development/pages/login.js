@@ -755,14 +755,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var AuthHelperMethods = // Initializing important variables
-function AuthHelperMethods(domain) {
+function AuthHelperMethods(domain) {//THIS LINE IS ONLY USED WHEN YOU'RE IN PRODUCTION MODE!
+  // this.domain = domain || 'http://localhost:3000'; // API server domain
+
   var _this = this;
 
   Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, AuthHelperMethods);
 
   Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(this, "login", function (inputValues) {
     // Get a token from api server using the fetch api
-    axios__WEBPACK_IMPORTED_MODULE_5___default.a.post("http://localhost:8080/login", inputValues).then(function (res) {
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.post("http://localhost:8000/login", inputValues).then(function (res) {
       console.log(res.data.token);
       var token = res.data.token;
       localStorage.setItem('rememberMe', token); //setToken(token);
@@ -848,9 +850,6 @@ function AuthHelperMethods(domain) {
       throw error;
     }
   });
-
-  //THIS LINE IS ONLY USED WHEN YOU'RE IN PRODUCTION MODE!
-  this.domain = domain || 'http://localhost:3000'; // API server domain
 };
 
 
