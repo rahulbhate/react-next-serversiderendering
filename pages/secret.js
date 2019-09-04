@@ -8,7 +8,7 @@ const serverUrl = 'http://localhost:8080';
 function Secret() {
   const [isAuthenticated, setAuthenticated] = useState(true);
   const [clientToken, setToken] = useState();
-  useEffect(() => {
+  /*useEffect(() => {
     const token = localStorage.getItem('rememberMe');
     console.log(token);
 
@@ -40,16 +40,10 @@ function Secret() {
       .then((error) => {
         console.log(error);
       });
-  };
-  return isAuthenticated ? (
+  };*/
+  return (
     <div>
-      {' '}
       <h3>This is secret page</h3>
-      <button onClick={logout}>Logout</button>
-    </div>
-  ) : (
-    <div>
-      <h3>You are not authorized user</h3>
     </div>
   );
 }
