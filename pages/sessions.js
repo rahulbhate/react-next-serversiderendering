@@ -1,6 +1,5 @@
 // This is the Link API
 import React from 'react';
-import withAuth from '../utils/withAuth';
 import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import speakerReducer from '../src/reducers/speakerReducer';
@@ -41,4 +40,4 @@ Sessions.getInitialProps = async () => {
   return { speaker: jj };
 };
 
-export default withAuth(Sessions);
+export default Sessions;

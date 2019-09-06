@@ -1,6 +1,5 @@
 // This is the Link API
 import React from 'react';
-import withAuth from '../utils/withAuth';
 import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
@@ -47,4 +46,4 @@ Speakers.getInitialProps = async () => {
   }
 };
 
-export default withAuth(Speakers);
+export default Speakers;

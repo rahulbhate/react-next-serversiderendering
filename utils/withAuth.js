@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import Router from 'next/router';
 import AuthHelperMethods from './AuthHelperMethods';
 

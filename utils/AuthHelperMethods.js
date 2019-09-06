@@ -1,5 +1,4 @@
 import decode from 'jwt-decode';
-import axios from 'axios';
 import Router from 'next/router';
 
 export default class AuthHelperMethods {
@@ -9,15 +8,30 @@ export default class AuthHelperMethods {
     // this.domain = domain || 'http://localhost:3000'; // API server domain
   }
   login = (inputValues) => {
-    // Get a token from api server using the fetch api
-    axios.post(`http://localhost:8000/login`, inputValues).then((res) => {
-      console.log(res.data.token);
-      const token = res.data.token;
-      localStorage.setItem('rememberMe', token);
-      //setToken(token);
-      console.log(token);
-      Router.push('/secret');
-    });
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(inputValues),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    };
+    fetch('http://localhost:8000/login', options)
+      .then((res) => {
+        if (res.ok) {
+          return Promise.resolve(res.json());
+        } else {
+          return Promise.reject({
+            status: res.status,
+            statusText: res.statusText,
+          });
+        }
+      })
+      .then((res) => {
+        console.log(res);
+        this.setToken(res.token);
+        Router.push('/secret');
+      })
+      .catch((err) => console.log('Error, with message:', err.statusText));
   };
 
   loggedIn = () => {
@@ -61,27 +75,6 @@ export default class AuthHelperMethods {
     let answer = decode(this.getToken());
     console.log('Recieved answer!');
     return answer;
-  };
-
-  fetch = (url, options) => {
-    // performs api calls sending the required authentication headers
-    const headers = {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-    };
-    // Setting Authorization header
-    // Authorization: Bearer xxxxxxx.xxxxxxxx.xxxxxx
-    if (this.loggedIn()) {
-      headers['Authorization'] = 'Bearer ' + this.getToken();
-    }
-
-    return fetch(url, {
-      headers,
-      ...options,
-    })
-      .then(this._checkStatus)
-      .then((response) => response.data.json())
-      .then(error);
   };
 
   _checkStatus = (response) => {
