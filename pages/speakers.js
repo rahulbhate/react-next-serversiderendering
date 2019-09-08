@@ -6,20 +6,17 @@ import axios from 'axios';
 import speakerReducer from '../src/reducers/speakerReducer';
 import Table from '../src/components/Table/Table';
 import { useState, useEffect, useReducer } from 'react';
-
+import AuthHelperMethods from '../utils/AuthHelperMethods';
+import Router from 'next/router';
 function Speakers({ speaker }) {
+  const Auth = new AuthHelperMethods();
   const [speakersData, dispatch] = useReducer(speakerReducer, {
     speaker,
   });
   useEffect(() => {
-    console.log(
-      'UseEffect LifeCycle Method on Client Side get Called once Server Side Rendering Done',
-    );
-    dispatch({
-      type: 'setSpeakersData',
-      data: speakersData,
-    });
-    console.log('dispatch function called');
+    if (!Auth.loggedIn()) {
+      Router.push('/login')
+    }
   }, []);
 
   return (

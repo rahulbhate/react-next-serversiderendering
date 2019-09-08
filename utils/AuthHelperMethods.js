@@ -29,7 +29,7 @@ export default class AuthHelperMethods {
       .then((res) => {
         console.log(res);
         this.setToken(res.token);
-        Router.push('/secret');
+        Router.push('/sessions');
       })
       .catch((err) => console.log('Error, with message:', err.statusText));
   };

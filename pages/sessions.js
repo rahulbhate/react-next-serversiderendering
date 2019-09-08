@@ -4,25 +4,21 @@ import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import speakerReducer from '../src/reducers/speakerReducer';
 import { useState, useEffect, useReducer } from 'react';
-
+import AuthHelperMethods from '../utils/AuthHelperMethods';
+import Router from 'next/router';
 function Sessions({ speaker }) {
+  const Auth = new AuthHelperMethods();
   const [sessionData, dispatch] = useReducer(speakerReducer, {
     speaker,
   });
   useEffect(() => {
-    console.log(
-      'UseEffect LifeCycle Method on Client Side get Called once Server Side Rendering Done',
-    );
-    dispatch({
-      type: 'setSessionsData',
-      data: sessionData,
-    });
+    if (!Auth.loggedIn()) {
+      Router.push('/login')
+    }
   }, []);
 
   return (
     <>
-      {console.log(sessionData.speaker.sessions)}
-
       <ul>
         {sessionData.speaker.sessions.map((session, index) => {
           return <li key={index}>{session.title}</li>;

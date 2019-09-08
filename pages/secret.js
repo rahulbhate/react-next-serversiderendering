@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import withAuth from '../utils/withAuth';
+
 function Secret() {
   return (
     <div>

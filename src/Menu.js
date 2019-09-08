@@ -1,7 +1,6 @@
 // This is the Link API
 import React from 'react';
 import Link from 'next/link';
-
 function Menu() {
   return (
     <>
