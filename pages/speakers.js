@@ -6,18 +6,12 @@ import axios from 'axios';
 import speakerReducer from '../src/reducers/speakerReducer';
 import Table from '../src/components/Table/Table';
 import { useState, useEffect, useReducer } from 'react';
-import AuthHelperMethods from '../utils/AuthHelperMethods';
+import withAuthInitial from '../utils/withAuthInitial';
 import Router from 'next/router';
 function Speakers({ speaker }) {
-  const Auth = new AuthHelperMethods();
   const [speakersData, dispatch] = useReducer(speakerReducer, {
     speaker,
   });
-  useEffect(() => {
-    if (!Auth.loggedIn()) {
-      Router.push('/login')
-    }
-  }, []);
 
   return (
     <>
@@ -43,4 +37,4 @@ Speakers.getInitialProps = async () => {
   }
 };
 
-export default Speakers;
+export default withAuthInitial(Speakers);

@@ -5,17 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import speakerReducer from '../src/reducers/speakerReducer';
 import { useState, useEffect, useReducer } from 'react';
 import AuthHelperMethods from '../utils/AuthHelperMethods';
+import withAuthInitial from '../utils/withAuthInitial';
 import Router from 'next/router';
 function Sessions({ speaker }) {
-  const Auth = new AuthHelperMethods();
   const [sessionData, dispatch] = useReducer(speakerReducer, {
     speaker,
   });
-  useEffect(() => {
-    if (!Auth.loggedIn()) {
-      Router.push('/login')
-    }
-  }, []);
 
   return (
     <>
@@ -36,4 +31,4 @@ Sessions.getInitialProps = async () => {
   return { speaker: jj };
 };
 
-export default Sessions;
+export default withAuthInitial(Sessions);
