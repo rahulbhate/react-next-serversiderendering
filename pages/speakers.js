@@ -9,9 +9,7 @@ import { useState, useEffect, useReducer } from 'react';
 import withAuthInitial from '../utils/withAuthInitial';
 import Router from 'next/router';
 function Speakers({ speaker }) {
-  const [speakersData, dispatch] = useReducer(speakerReducer, {
-    speaker,
-  });
+  const [speakersData, setSpeakerData] = useState({ speaker });
 
   return (
     <>

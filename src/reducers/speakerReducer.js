@@ -1,13 +1,17 @@
 function speakerReducer(state, action) {
   switch (action.type) {
-    case 'setSpeakersData': {
-      console.log('setSpeakersData action type called');
-      return action.data;
-    }
-    case 'setSessionsData': {
-      console.log('setSessionsData action type called');
-      return action.data;
-    }
+    case 'FETCH_SUCCESS':
+      return {
+        loading: false,
+        speaker: action.payload,
+        error: '',
+      };
+    case 'FETCH_ERROR':
+      return {
+        loading: false,
+        speaker: {},
+        error: 'Something Went Wrong',
+      };
     default:
       return state;
   }
