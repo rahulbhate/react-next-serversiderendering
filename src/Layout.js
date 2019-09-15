@@ -8,8 +8,8 @@ export default class Layout extends React.Component {
     const { children } = this.props;
     return (
       <React.Fragment>
-        <Header />
         <Menu />
+        <Header />
         {children}
         <Footer />
       </React.Fragment>

@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from 'react-redux';
+import withAuthInitial from '../utils/withAuthInitial';
 //import Button from 'react-reusable-components/src/components/Button/Button';
 class Index extends Component {
   static getInitialProps({ store, isServer, pathname, query }) {
@@ -20,4 +21,4 @@ class Index extends Component {
   }
 }
 
-export default connect((state) => state)(Index);
+export default withAuthInitial(connect((state) => state)(Index));
