@@ -11546,6 +11546,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/withAuthInitial */ "./utils/withAuthInitial.js");
+/* harmony import */ var _src_components_ImageSlider_ImageSlider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/ImageSlider/ImageSlider */ "./src/components/ImageSlider/ImageSlider.js");
 
 
 
@@ -11554,6 +11555,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/index.js";
 // This is the Link API
+
 
 
 
@@ -11576,19 +11578,25 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 18
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_src_components_ImageSlider_ImageSlider__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
         },
         __self: this
       }, "Prop from Redux ", _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.props.foo)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 21
         },
         __self: this
       }, "Prop from getInitialProps ", this.props.custom));
@@ -11618,6 +11626,181 @@ function (_Component) {
 /* harmony default export */ __webpack_exports__["default"] = (Object(_utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(function (state) {
   return state;
 })(Index)));
+
+/***/ }),
+
+/***/ "./src/components/Button/Button.js":
+/*!*****************************************!*\
+  !*** ./src/components/Button/Button.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Button/Button.js";
+
+
+var Button = function Button(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    style: props.style,
+    className: props.type === 'primary' ? 'btn btn-danger' : 'btn btn-secondary'
+  }, props, {
+    onClick: props.action,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), props.title);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./src/components/ImageSlider/ImageSlider.js":
+/*!***************************************************!*\
+  !*** ./src/components/ImageSlider/ImageSlider.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/components/Button/Button.js");
+/* harmony import */ var _src_sliderImages__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../src/sliderImages */ "./src/sliderImages.js");
+
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/ImageSlider/ImageSlider.js";
+
+
+
+
+var ImageSlider = function ImageSlider() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_src_sliderImages__WEBPACK_IMPORTED_MODULE_3__["default"]),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      photos = _useState2[0],
+      setPhotos = _useState2[1];
+
+  console.log(photos);
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(0),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      slideCount = _useState4[0],
+      setSlideCount = _useState4[1];
+
+  function goToPrevSlide() {
+    setSlideCount(slideCount - 1);
+  }
+
+  function goToNextSlide() {
+    console.log('called');
+    setSlideCount(slideCount + 1);
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "carousel slide",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "carousel-inner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, photos.map(function (option, index) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, photos.indexOf(option) === slideCount ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      src: option.imageSrc,
+      alt: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    })) : '');
+  })), slideCount !== 0 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "carousel-control-prev",
+    onClick: goToPrevSlide,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  })) : '', slideCount !== photos.length - 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "carousel-control-next",
+    onClick: goToNextSlide,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  })) : ''));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ImageSlider);
+
+/***/ }),
+
+/***/ "./src/sliderImages.js":
+/*!*****************************!*\
+  !*** ./src/sliderImages.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var sliderData = [{
+  title: 'title 1',
+  description: 'description 1',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider1-e1508238353660.jpg'
+}, {
+  title: 'title 2',
+  description: 'description 2',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider2.jpg'
+}, {
+  title: 'title 3',
+  description: 'description 3',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider4.jpg'
+}, {
+  title: 'title 4',
+  description: 'description 4',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider3.jpg'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (sliderData);
 
 /***/ }),
 

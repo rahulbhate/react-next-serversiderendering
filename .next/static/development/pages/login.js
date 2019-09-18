@@ -10719,7 +10719,6 @@ var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pa
 
 function Login() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -11135,7 +11134,7 @@ function AuthHelperMethods(domain) {//THIS LINE IS ONLY USED WHEN YOU'RE IN PROD
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Flogin&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Flogin.js ***!
   \**********************************************************************************************************************************************************/
@@ -11158,5 +11157,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=login.js.map

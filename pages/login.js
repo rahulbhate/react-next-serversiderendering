@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginForm from '../src/components/LoginForm/LoginForm';
 function Login() {
   return (
-    <div className="container">
+    <div>
       <h2>Login Form</h2>
       <LoginForm />
     </div>

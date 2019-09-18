@@ -460,7 +460,6 @@ var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pa
 
 function Login() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
