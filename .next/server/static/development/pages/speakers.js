@@ -840,11 +840,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_reducers_speakerReducer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/reducers/speakerReducer */ "./src/reducers/speakerReducer.js");
 /* harmony import */ var _src_components_Table_Table__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/components/Table/Table */ "./src/components/Table/Table.js");
 /* harmony import */ var _utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/withAuthInitial */ "./utils/withAuthInitial.js");
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/static/development/pages/speakers.js
 /* harmony import */ var _src_components_SpeakerCard_SpeakerCard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/SpeakerCard/SpeakerCard */ "./src/components/SpeakerCard/SpeakerCard.js");
+========
+/* harmony import */ var _src_components_ImageSlider_ImageSlider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/ImageSlider/ImageSlider */ "./src/components/ImageSlider/ImageSlider.js");
+>>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d:.next/server/static/development/pages/index.js
 
 
 
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\speakers.js";
+=======
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_10__);
+
+
+
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/speakers.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 // This is the Link API
 
 
@@ -853,32 +866,55 @@ var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\
 
 
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/static/development/pages/speakers.js
+========
+
+ //import Button from 'react-reusable-components/src/components/Button/Button';
+>>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d:.next/server/static/development/pages/index.js
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 
 function Speakers(_ref) {
   var speaker = _ref.speaker;
 
+<<<<<<< HEAD
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(speaker),
+=======
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({
+    speaker: speaker
+  }),
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
       speakersData = _useState2[0],
       setSpeakerData = _useState2[1];
 
+<<<<<<< HEAD
   console.log(speakersData);
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "container",
+=======
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, console.log(speakersData.speaker.speakers), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("hr", {
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
+<<<<<<< HEAD
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "row",
+=======
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
+<<<<<<< HEAD
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "card-deck",
     __source: {
@@ -903,6 +939,18 @@ function Speakers(_ref) {
       __self: this
     }));
   })))));
+=======
+  }, speakersData.speaker.speakers.map(function (speaker, index) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
+      key: speaker.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, speaker.firstName);
+  })));
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 }
 
 Speakers.getInitialProps =
@@ -967,7 +1015,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 
 
+<<<<<<< HEAD
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Pagination\\Pagination.js";
+=======
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Pagination/Pagination.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 var Pagination = function Pagination(_ref) {
@@ -1024,6 +1076,7 @@ var Pagination = function Pagination(_ref) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/components/SpeakerCard/SpeakerCard.js":
 /*!***************************************************!*\
   !*** ./src/components/SpeakerCard/SpeakerCard.js ***!
@@ -1083,6 +1136,8 @@ var SpeakerCard = function SpeakerCard(props) {
 
 /***/ }),
 
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 /***/ "./src/components/Table/Table.js":
 /*!***************************************!*\
   !*** ./src/components/Table/Table.js ***!
@@ -1101,7 +1156,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Pagination_Pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Pagination/Pagination */ "./src/components/Pagination/Pagination.js");
 
 
+<<<<<<< HEAD
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Table\\Table.js";
+=======
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Table/Table.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 
@@ -1121,9 +1180,16 @@ var Table = function Table(props) {
         key: props.data[key],
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
+          lineNumber: 18
+        },
+        __self: this
+<<<<<<<< HEAD:.next/server/static/development/pages/speakers.js
+=======
           lineNumber: 16
         },
         __self: this
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
       }, props.data[key]);
     });
   };
@@ -1136,6 +1202,21 @@ var Table = function Table(props) {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
+<<<<<<< HEAD
+========
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_src_components_ImageSlider_ImageSlider__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+>>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d:.next/server/static/development/pages/index.js
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(RenderRow, {
@@ -1144,7 +1225,15 @@ var Table = function Table(props) {
         keys: keys,
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/static/development/pages/speakers.js
           lineNumber: 25
+========
+          lineNumber: 21
+>>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d:.next/server/static/development/pages/index.js
+=======
+          lineNumber: 25
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
         },
         __self: this
       }));
@@ -1355,6 +1444,184 @@ function speakerReducer(state, action) {
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./src/components/Button/Button.js":
+/*!*****************************************!*\
+  !*** ./src/components/Button/Button.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Button/Button.js";
+
+
+var Button = function Button(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    style: props.style,
+    className: props.type === 'primary' ? 'btn btn-danger' : 'btn btn-secondary'
+  }, props, {
+    onClick: props.action,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), props.title);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./src/components/ImageSlider/ImageSlider.js":
+/*!***************************************************!*\
+  !*** ./src/components/ImageSlider/ImageSlider.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/components/Button/Button.js");
+/* harmony import */ var _src_sliderImages__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../src/sliderImages */ "./src/sliderImages.js");
+
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/ImageSlider/ImageSlider.js";
+
+
+
+
+var ImageSlider = function ImageSlider() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_src_sliderImages__WEBPACK_IMPORTED_MODULE_3__["default"]),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      photos = _useState2[0],
+      setPhotos = _useState2[1];
+
+  console.log(photos);
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(0),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      slideCount = _useState4[0],
+      setSlideCount = _useState4[1];
+
+  function goToPrevSlide() {
+    setSlideCount(slideCount - 1);
+  }
+
+  function goToNextSlide() {
+    console.log('called');
+    setSlideCount(slideCount + 1);
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "carousel slide",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "carousel-inner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, photos.map(function (option, index) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, photos.indexOf(option) === slideCount ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      src: option.imageSrc,
+      alt: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    })) : '');
+  })), slideCount !== 0 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "carousel-control-prev",
+    onClick: goToPrevSlide,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  })) : '', slideCount !== photos.length - 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "carousel-control-next",
+    onClick: goToNextSlide,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  })) : ''));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ImageSlider);
+
+/***/ }),
+
+/***/ "./src/sliderImages.js":
+/*!*****************************!*\
+  !*** ./src/sliderImages.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var sliderData = [{
+  title: 'title 1',
+  description: 'description 1',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider1-e1508238353660.jpg'
+}, {
+  title: 'title 2',
+  description: 'description 2',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider2.jpg'
+}, {
+  title: 'title 3',
+  description: 'description 3',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider4.jpg'
+}, {
+  title: 'title 4',
+  description: 'description 4',
+  imageSrc: 'https://www.asreducation.com.au/wp-content/uploads/2017/10/Slider3.jpg'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (sliderData);
+
+/***/ }),
+
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 /***/ "./utils/AuthHelperMethods.js":
 /*!************************************!*\
   !*** ./utils/AuthHelperMethods.js ***!
@@ -1518,7 +1785,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\utils\\withAuthInitial.js";
+=======
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/utils/withAuthInitial.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 
@@ -1638,7 +1909,11 @@ function withAuthInitial(AuthComponent) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\speakers.js */"./pages/speakers.js");
+=======
+module.exports = __webpack_require__(/*! /Users/rahulbhate/projects/react-next-serversiderendering/pages/speakers.js */"./pages/speakers.js");
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 /***/ }),
@@ -1665,6 +1940,20 @@ module.exports = require("core-js/library/fn/array/is-array");
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "core-js/library/fn/array/is-array":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/array/is-array" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/array/is-array");
+
+/***/ }),
+
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 /***/ "core-js/library/fn/date/now":
 /*!**********************************************!*\
   !*** external "core-js/library/fn/date/now" ***!

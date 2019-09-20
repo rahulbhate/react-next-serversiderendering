@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\speakers.js"],{
+=======
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/speakers.js"],{
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -7041,9 +7045,15 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fspeakers&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Cspeakers.js!./":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fspeakers&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Cspeakers.js ***!
+=======
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fspeakers&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fspeakers.js!./":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fspeakers&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fspeakers.js ***!
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
   \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -7333,12 +7343,20 @@ function withRouter(ComposedComponent) {
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_7aff549c98b978433226 ***!
+=======
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_829b10deddf10e1653a8 ***!
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/object-assign/index.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/object-assign/index.js");
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 /***/ }),
 
@@ -7539,12 +7557,20 @@ process.umask = function() { return 0; };
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_7aff549c98b978433226 ***!
+=======
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_829b10deddf10e1653a8 ***!
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/prop-types/checkPropTypes.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/prop-types/checkPropTypes.js");
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 /***/ }),
 
@@ -8179,12 +8205,20 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_7aff549c98b978433226 ***!
+=======
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_829b10deddf10e1653a8 ***!
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 /***/ }),
 
@@ -9186,12 +9220,20 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/react/index.js from dll-reference dll_7aff549c98b978433226 ***!
+=======
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_829b10deddf10e1653a8 ***!
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/react/index.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/react/index.js");
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 /***/ }),
 
@@ -10721,12 +10763,20 @@ module.exports = {
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_7aff549c98b978433226 ***!
+=======
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_829b10deddf10e1653a8 ***!
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/webpack/buildin/global.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/webpack/buildin/global.js");
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 /***/ }),
 
@@ -10787,16 +10837,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_reducers_speakerReducer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/reducers/speakerReducer */ "./src/reducers/speakerReducer.js");
 /* harmony import */ var _src_components_Table_Table__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/components/Table/Table */ "./src/components/Table/Table.js");
 /* harmony import */ var _utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/withAuthInitial */ "./utils/withAuthInitial.js");
+<<<<<<< HEAD
 /* harmony import */ var _src_components_SpeakerCard_SpeakerCard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/SpeakerCard/SpeakerCard */ "./src/components/SpeakerCard/SpeakerCard.js");
 
 
 
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\speakers.js";
+=======
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_10__);
+
+
+
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/speakers.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 // This is the Link API
 
 
 
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/static/development/pages/speakers.js
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 
@@ -10806,26 +10869,45 @@ var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\
 function Speakers(_ref) {
   var speaker = _ref.speaker;
 
+<<<<<<< HEAD
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(speaker),
+=======
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({
+    speaker: speaker
+  }),
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
       speakersData = _useState2[0],
       setSpeakerData = _useState2[1];
 
+<<<<<<< HEAD
   console.log(speakersData);
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "container",
+========
+function Login() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+>>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d:.next/static/development/pages/login.js
+=======
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, console.log(speakersData.speaker.speakers), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("hr", {
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
+<<<<<<< HEAD
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "row",
+=======
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
+<<<<<<< HEAD
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "card-deck",
     __source: {
@@ -10850,6 +10932,18 @@ function Speakers(_ref) {
       __self: this
     }));
   })))));
+=======
+  }, speakersData.speaker.speakers.map(function (speaker, index) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
+      key: speaker.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, speaker.firstName);
+  })));
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 }
 
 Speakers.getInitialProps =
@@ -10914,7 +11008,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 
 
+<<<<<<< HEAD
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Pagination\\Pagination.js";
+=======
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Pagination/Pagination.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 var Pagination = function Pagination(_ref) {
@@ -10971,6 +11069,7 @@ var Pagination = function Pagination(_ref) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/components/SpeakerCard/SpeakerCard.js":
 /*!***************************************************!*\
   !*** ./src/components/SpeakerCard/SpeakerCard.js ***!
@@ -11030,6 +11129,8 @@ var SpeakerCard = function SpeakerCard(props) {
 
 /***/ }),
 
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 /***/ "./src/components/Table/Table.js":
 /*!***************************************!*\
   !*** ./src/components/Table/Table.js ***!
@@ -11048,7 +11149,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Pagination_Pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Pagination/Pagination */ "./src/components/Pagination/Pagination.js");
 
 
+<<<<<<< HEAD
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Table\\Table.js";
+=======
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Table/Table.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 
@@ -11431,6 +11536,10 @@ function AuthHelperMethods(domain) {//THIS LINE IS ONLY USED WHEN YOU'RE IN PROD
 
 /***/ }),
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/static/development/pages/speakers.js
+=======
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 /***/ "./utils/withAuthInitial.js":
 /*!**********************************!*\
   !*** ./utils/withAuthInitial.js ***!
@@ -11465,7 +11574,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\utils\\withAuthInitial.js";
+=======
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/utils/withAuthInitial.js";
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 
@@ -11580,26 +11693,61 @@ function withAuthInitial(AuthComponent) {
 
 /***/ 5:
 /*!****************************************************************************************************************************************************************!*\
+<<<<<<< HEAD
   !*** multi next-client-pages-loader?page=%2Fspeakers&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Cspeakers.js ***!
   \****************************************************************************************************************************************************************/
+========
+/***/ 2:
+/*!**********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Flogin&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Flogin.js ***!
+  \**********************************************************************************************************************************************************/
+>>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d:.next/static/development/pages/login.js
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fspeakers&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Cspeakers.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fspeakers&absolutePagePath=C%3A%5CUsers%5Crbhate%5Cprojects%5Creact-next-serversiderendering%5Cpages%5Cspeakers.js!./");
+=======
+  !*** multi next-client-pages-loader?page=%2Fspeakers&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fspeakers.js ***!
+  \****************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fspeakers&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fspeakers.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fspeakers&absolutePagePath=%2FUsers%2Frahulbhate%2Fprojects%2Freact-next-serversiderendering%2Fpages%2Fspeakers.js!./");
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "dll-reference dll_7aff549c98b978433226":
 /*!*******************************************!*\
   !*** external "dll_7aff549c98b978433226" ***!
+=======
+/***/ "dll-reference dll_829b10deddf10e1653a8":
+/*!*******************************************!*\
+  !*** external "dll_829b10deddf10e1653a8" ***!
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = dll_7aff549c98b978433226;
+
+/***/ })
+
+<<<<<<<< HEAD:.next/static/development/pages/speakers.js
+},[[5,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=speakers.js.map
+========
+},[[2,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=login.js.map
+>>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d:.next/static/development/pages/login.js
+=======
+module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
 },[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=speakers.js.map
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d

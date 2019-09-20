@@ -10,6 +10,7 @@ function Header() {
         <div className="">
           <img src="/static/logo/aiig_logo.png" />
         </div>
+        
       </div>
     </>
   );

@@ -20,6 +20,20 @@
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
+<<<<<<< HEAD
+    "/speakers": [
+=======
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/sessions": [
+>>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ],
     "/speakers": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",

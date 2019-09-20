@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from 'react-redux';
 import withAuthInitial from '../utils/withAuthInitial';
+import ImageSlider from '../src/components/ImageSlider/ImageSlider';
+
 //import Button from 'react-reusable-components/src/components/Button/Button';
 class Index extends Component {
   static getInitialProps({ store, isServer, pathname, query }) {
@@ -14,8 +16,10 @@ class Index extends Component {
   render() {
     return (
       <div>
+       <ImageSlider />
         <div>Prop from Redux {JSON.stringify(this.props.foo)}</div>
         <div>Prop from getInitialProps {this.props.custom}</div>
+
       </div>
     );
   }
