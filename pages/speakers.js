@@ -7,19 +7,26 @@ import speakerReducer from '../src/reducers/speakerReducer';
 import Table from '../src/components/Table/Table';
 import { useState, useEffect, useReducer } from 'react';
 import withAuthInitial from '../utils/withAuthInitial';
-import Router from 'next/router';
-function Speakers({ speaker }) {
-  const [speakersData, setSpeakerData] = useState({ speaker });
+import SpeakerCard from '../src/components/SpeakerCard/SpeakerCard';
 
+function Speakers({ speaker }) {
+  const [speakersData, setSpeakerData] = useState(speaker);
+  console.log(speakersData);
   return (
     <>
-      {console.log(speakersData.speaker.speakers)}
-      <hr />
-      <ul>
-        {speakersData.speaker.speakers.map((speaker, index) => {
-          return <li key={speaker.id}>{speaker.firstName}</li>;
-        })}
-      </ul>
+      <div className="container">
+        <div className="row">
+          <div className="card-deck">
+            {speakersData.speakers.map((speaker, index) => {
+              return (
+                <div className="col-md-4">
+                  <SpeakerCard speaker={speaker} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </>
   );
 }

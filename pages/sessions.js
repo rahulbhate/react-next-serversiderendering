@@ -4,9 +4,8 @@ import 'isomorphic-unfetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import speakerReducer from '../src/reducers/speakerReducer';
 import { useState, useEffect, useReducer } from 'react';
-import AuthHelperMethods from '../utils/AuthHelperMethods';
 import withAuthInitial from '../utils/withAuthInitial';
-import Router from 'next/router';
+
 function Sessions({ speaker }) {
   const [sessionData, dispatch] = useReducer(speakerReducer, {
     speaker,

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -768,17 +768,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _src_reducers_speakerReducer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/reducers/speakerReducer */ "./src/reducers/speakerReducer.js");
-/* harmony import */ var _utils_AuthHelperMethods__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/AuthHelperMethods */ "./utils/AuthHelperMethods.js");
-/* harmony import */ var _utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/withAuthInitial */ "./utils/withAuthInitial.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/withAuthInitial */ "./utils/withAuthInitial.js");
 
 
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/sessions.js";
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\sessions.js";
 // This is the Link API
-
-
 
 
 
@@ -799,7 +794,7 @@ function Sessions(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, sessionData.speaker.sessions.map(function (session, index) {
@@ -807,7 +802,7 @@ function Sessions(_ref) {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 18
       },
       __self: this
     }, session.title);
@@ -845,7 +840,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
     }
   }, _callee);
 }));
-/* harmony default export */ __webpack_exports__["default"] = (Object(_utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_8__["default"])(Sessions));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_utils_withAuthInitial__WEBPACK_IMPORTED_MODULE_7__["default"])(Sessions));
 
 /***/ }),
 
@@ -1046,7 +1041,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/utils/withAuthInitial.js";
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\utils\\withAuthInitial.js";
 
 
 
@@ -1159,14 +1154,14 @@ function withAuthInitial(AuthComponent) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!*********************************!*\
   !*** multi ./pages/sessions.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rahulbhate/projects/react-next-serversiderendering/pages/sessions.js */"./pages/sessions.js");
+module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\sessions.js */"./pages/sessions.js");
 
 
 /***/ }),

@@ -8,7 +8,6 @@ const Button = (props) => {
         props.type === 'primary' ? 'btn btn-danger' : 'btn btn-secondary'
       }
       {...props}
-      onClick={props.action}
     >
       {props.title}
     </button>

@@ -23,11 +23,13 @@ function Menu() {
                 <a className="nav-link">Home</a>
               </Link>
             </li>
+
             <li className="nav-item">
               <Link href="/speakers">
                 <a className="nav-link">Speakers</a>
               </Link>
             </li>
+
             <li className="nav-item">
               <Link href="/sessions">
                 <a className="nav-link">Sessions</a>

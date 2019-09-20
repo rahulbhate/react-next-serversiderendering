@@ -1513,7 +1513,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/_document.js";
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\_document.js";
 
 // _document is only rendered on the server side and not on the client side
 // Event handlers like onClick can't be added to this file
