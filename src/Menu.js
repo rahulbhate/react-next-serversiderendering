@@ -36,6 +36,11 @@ function Menu() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/products">
+                <a className="nav-link">Shop</a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/signup">
                 <a className="nav-link">SignUp</a>
               </Link>

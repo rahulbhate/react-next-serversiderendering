@@ -14,21 +14,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/sessions": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-<<<<<<< HEAD
-    "/speakers": [
-=======
-    "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/sessions": [
->>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
+    "/products": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",

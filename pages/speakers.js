@@ -11,13 +11,22 @@ import SpeakerCard from '../src/components/SpeakerCard/SpeakerCard';
 
 function Speakers({ speaker }) {
   const [speakersData, setSpeakerData] = useState(speaker);
-  console.log(speakersData);
+  const [search, setSearch] = useState('');
+  let filteredSpeakers = speakersData.speakers.filter((speaker) => {
+    let filterString =
+      speaker.firstName.toLowerCase() + speaker.lastName.toLowerCase();
+    return filterString.indexOf(search.toLowerCase()) !== -1;
+  });
+  function handleChange(event) {
+    setSearch(event.target.value);
+  }
   return (
     <>
       <div className="container">
+        <input type="text" onChange={handleChange} placeholder="search...." />
         <div className="row">
           <div className="card-deck">
-            {speakersData.speakers.map((speaker, index) => {
+            {filteredSpeakers.map((speaker, index) => {
               return (
                 <div className="col-md-4">
                   <SpeakerCard speaker={speaker} />

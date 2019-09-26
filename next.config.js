@@ -3,16 +3,9 @@ const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
 // next.config.js
 const withTM = require('next-transpile-modules');
-<<<<<<< HEAD
 
-/*module.exports = withTM({
-  transpileModules: ['react-reusable-components'],
-});*/
-module.exports = withCSS();
-=======
- 
 module.exports = withTM({
-  transpileModules: ['react-reusable-components']
+  transpileModules: ['react-reusable-components'],
 });
 module.exports = withCSS({
   webpack: function(config) {
@@ -29,7 +22,6 @@ module.exports = withCSS({
     return config;
   },
 });
->>>>>>> 04deee2caca89b531da53a9eb8f5770f5980de3d
 
 /*module.exports = {
   transpileModules: ['react-reusable-components'],
