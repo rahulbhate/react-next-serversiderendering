@@ -41,6 +41,16 @@ function Menu() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/cart">
+                <a className="nav-link">Cart</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/checkout">
+                <a className="nav-link">Checkout</a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/signup">
                 <a className="nav-link">SignUp</a>
               </Link>
