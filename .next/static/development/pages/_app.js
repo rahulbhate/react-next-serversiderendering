@@ -13959,7 +13959,7 @@ function Menu() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/checkout",
+    href: "/scroll",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
@@ -13972,7 +13972,7 @@ function Menu() {
       lineNumber: 50
     },
     __self: this
-  }, "Checkout"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, "Infinite Scroll"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
@@ -13980,7 +13980,7 @@ function Menu() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/signup",
+    href: "/checkout",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
@@ -13993,7 +13993,7 @@ function Menu() {
       lineNumber: 55
     },
     __self: this
-  }, "SignUp"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, "Checkout"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
@@ -14001,7 +14001,7 @@ function Menu() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/login",
+    href: "/signup",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
@@ -14012,6 +14012,27 @@ function Menu() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60
+    },
+    __self: this
+  }, "SignUp"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
     },
     __self: this
   }, "Login")))))));

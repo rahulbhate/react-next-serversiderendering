@@ -7,13 +7,13 @@ import withAuthInitial from '../utils/withAuthInitial';
 import ProductCard from '../src/components/ProductCard/ProductCard';
 
 function Products({ storeProducts }) {
-  console.log(storeProducts);
+
   return (
     <>
       <div className="container">
         <div className="row">
           <div className="card-deck">
-            {storeProducts.storeProducts.map((product, index) => {
+            {storeProducts.map((product, index) => {
               return (
                 <div className="col-md-4">
                   <ProductCard product={product} />

@@ -46,6 +46,11 @@ function Menu() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/scroll">
+                <a className="nav-link">Infinite Scroll</a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/checkout">
                 <a className="nav-link">Checkout</a>
               </Link>
