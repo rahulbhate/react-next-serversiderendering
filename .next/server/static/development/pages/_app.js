@@ -1846,7 +1846,7 @@ function Footer() {
       lineNumber: 7
     },
     __self: this
-  }, "\xA9 2017 Amalgamated Australian Investment Group | Terms and Conditions"), ";");
+  }, "\xA9 2019 All Rights Reserved | Terms and Conditions"), ";");
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -1882,27 +1882,20 @@ function Header() {
       lineNumber: 8
     },
     __self: this
-  }, "Welcome to AAIG"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Welcome to Online Shopping"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, "ALL YOUR FINANCIAL SERVICES NEEDS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "HEY, YOU\u2019RE NEW HERE! GET 10% OFF WITH CODE: ASOSNEW19"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/logo/aiig_logo.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }))));
+  })));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -2035,7 +2028,9 @@ function Menu() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/logo/aiig_logo.png",
+    src: "/static/logo/pexels-photo.jpg",
+    width: 100,
+    height: 100,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9

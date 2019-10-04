@@ -8,7 +8,7 @@ function Footer() {
         className="jumbotron text-center site-copyright"
         style={{ backgroundColor: '#2fb88a', color: 'white' }}
       >
-        © 2017 Amalgamated Australian Investment Group | Terms and Conditions
+        © 2019 All Rights Reserved | Terms and Conditions
       </div>
       ;
     </>

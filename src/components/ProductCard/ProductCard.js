@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
 import Button from '../../components/Button/Button';
 const ProductCard = (props) => {
-  const [quantity, setQty] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   function handleAddToCart() {
     let cart = localStorage.getItem('cart')
       ? JSON.parse(localStorage.getItem('cart'))
       : {};
-    let SKU = props.product.SKU;
-    cart[SKU] = cart[SKU] ? cart[SKU] : 0;
-    let qty = cart[SKU] + setQty(quantity + 1);
+    let id = props.product.SKU;
+    let title = props.product.title;
+    let price = props.product.price;
+    cart[id] = cart[id] ? cart[id] : 0;
+    let qty = cart[id] + quantity;
     if (props.product.available_quantity < qty) {
-      cart[SKU] = props.product.available_quantity;
+      cart[id] = props.product.available_quantity;
     } else {
-      cart[SKU] = qty;
+      cart[id] = qty;
+      cart[title] = title;
+      cart[price] = price;
     }
     localStorage.setItem('cart', JSON.stringify(cart));
   }
+
   return (
     <>
       <div>

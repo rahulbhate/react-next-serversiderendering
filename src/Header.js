@@ -5,12 +5,9 @@ function Header() {
   return (
     <>
       <div className="jumbotron text-center">
-        <h1>Welcome to AAIG</h1>
-        <p>ALL YOUR FINANCIAL SERVICES NEEDS</p>
-        <div className="">
-          <img src="/static/logo/aiig_logo.png" />
-        </div>
-        
+        <h1>Welcome to Online Shopping</h1>
+        <p>HEY, YOU’RE NEW HERE! GET 10% OFF WITH CODE: ASOSNEW19</p>
+        <div className="">{/* <img src="/static/logo/aiig_logo.png" /> */}</div>
       </div>
     </>
   );

@@ -6,7 +6,7 @@ function Menu() {
     <>
       <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
         <a className="navbar-brand" href="#">
-          <img src="/static/logo/aiig_logo.png" />
+          <img src="/static/logo/pexels-photo.jpg" width={100} height={100} />
         </a>
         <button
           className="navbar-toggler"
