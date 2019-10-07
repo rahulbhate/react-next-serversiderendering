@@ -4,12 +4,15 @@ import useInfiniteScroll from './useInfiniteScroll';
 const List = () => {
   const [start, setStart] = useState(1);
   const [limit, setLimit] = useState(5);
-  const [listItems, setListItems] = useState(
-    Array.from(Array(30).keys(), (n) => n + 1),
-  );
+  const [listItems, setListItems] = useState([]);
   const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
 
   function fetchMoreListItems() {
+    alert('called');
+    const respon = fetch(
+      `http://localhost:8000/products?start=${start}&limit=${limit}`,
+    );
+    console.log(respon);
     setTimeout(() => {
       setListItems((prevState) => [
         ...prevState,
