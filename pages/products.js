@@ -9,41 +9,41 @@ import withAuthInitial from '../utils/withAuthInitial';
 import ProductCard from '../src/components/ProductCard/ProductCard';
 
 function Products({ storeProducts }) {
-  const [start] = useState(3);
-  const [limit] = useState(3);
-  const [listItems, setListItems] = useState([]);
+  const [start,setStart] = useState(4);
+  const [limit] = useState(6);
+  const [listItems, setListItems] = useState(storeProducts);
+  const [newProds,setNewProds] = useState();
   const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
-  function fetchMoreListItems() {
-    alert('called');
-    const respon = fetch(
+  async function fetchMoreListItems() {
+    let newStart = start+limit;
+    setStart(newStart)
+    const respon = await fetch(
       `http://localhost:8000/products?start=${start}&limit=${limit}`,
     );
-    console.log(respon);
-    setTimeout(() => {
+    const data = await respon.json();
+    const error = 'Module Not Found';
+    if (data) {
       setListItems((prevState) => [
         ...prevState,
-        ...Array.from(Array(20).keys(), (n) => n + prevState.length + 1),
-      ]);
-      setIsFetching(false);
-    }, 2000);
+        ...data
+      ])
+      console.log(data,start,limit);
+    } else {
+      return { storeProducts: error };
+    }
   }
   return (
     <>
       <div className="container">
         <div className="row">
           <div className="card-deck">
-            {storeProducts.map((product, index) => {
+            {listItems.map((product, index) => {
               return (
                 <div className="col-md-4">
                   <ProductCard product={product} />
                 </div>
               );
             })}
-            <ul className="list-group mb-2">
-              {listItems.map((listItem, index) => (
-                <li className="list-group-item">List Item {listItem}</li>
-              ))}
-            </ul>
             {isFetching && 'Fetching more list items...'}
           </div>
         </div>
@@ -54,7 +54,7 @@ function Products({ storeProducts }) {
 
 Products.getInitialProps = async () => {
   let start = 0;
-  let limit = 3;
+  let limit = 6;
   const respon = await fetch(
     `http://localhost:8000/products?start=${start}&limit=${limit}`,
   );

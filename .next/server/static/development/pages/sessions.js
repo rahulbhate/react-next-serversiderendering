@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -772,7 +772,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\sessions.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/sessions.js";
 // This is the Link API
 
 
@@ -1041,7 +1041,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\utils\\withAuthInitial.js";
+var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/utils/withAuthInitial.js";
 
 
 
@@ -1154,14 +1154,14 @@ function withAuthInitial(AuthComponent) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/sessions.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\sessions.js */"./pages/sessions.js");
+module.exports = __webpack_require__(/*! /Users/rahulbhate/projects/react-next-serversiderendering/pages/sessions.js */"./pages/sessions.js");
 
 
 /***/ }),
