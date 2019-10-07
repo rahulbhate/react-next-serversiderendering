@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import fetch from 'isomorphic-unfetch';
 import Button from '../src/components/Button/Button';
 import List from '../src/components/List/List';
+import useInfiniteScroll from '../src/components/List/useInfiniteScroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import withAuthInitial from '../utils/withAuthInitial';
 import ProductCard from '../src/components/ProductCard/ProductCard';
@@ -10,7 +11,22 @@ import ProductCard from '../src/components/ProductCard/ProductCard';
 function Products({ storeProducts }) {
   const [start] = useState(3);
   const [limit] = useState(3);
-
+  const [listItems, setListItems] = useState([]);
+  const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
+  function fetchMoreListItems() {
+    alert('called');
+    const respon = fetch(
+      `http://localhost:8000/products?start=${start}&limit=${limit}`,
+    );
+    console.log(respon);
+    setTimeout(() => {
+      setListItems((prevState) => [
+        ...prevState,
+        ...Array.from(Array(20).keys(), (n) => n + prevState.length + 1),
+      ]);
+      setIsFetching(false);
+    }, 2000);
+  }
   return (
     <>
       <div className="container">
@@ -23,7 +39,12 @@ function Products({ storeProducts }) {
                 </div>
               );
             })}
-            <List />
+            <ul className="list-group mb-2">
+              {listItems.map((listItem, index) => (
+                <li className="list-group-item">List Item {listItem}</li>
+              ))}
+            </ul>
+            {isFetching && 'Fetching more list items...'}
           </div>
         </div>
       </div>
