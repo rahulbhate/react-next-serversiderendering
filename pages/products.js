@@ -9,25 +9,22 @@ import withAuthInitial from '../utils/withAuthInitial';
 import ProductCard from '../src/components/ProductCard/ProductCard';
 
 function Products({ storeProducts }) {
-  const [start,setStart] = useState(4);
+  const [start, setStart] = useState(4);
   const [limit] = useState(6);
   const [listItems, setListItems] = useState(storeProducts);
-  const [newProds,setNewProds] = useState();
+  const [newProds, setNewProds] = useState();
   const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
   async function fetchMoreListItems() {
-    let newStart = start+limit;
-    setStart(newStart)
+    let newStart = start + limit;
+    setStart(newStart);
     const respon = await fetch(
       `http://localhost:8000/products?start=${start}&limit=${limit}`,
     );
     const data = await respon.json();
     const error = 'Module Not Found';
     if (data) {
-      setListItems((prevState) => [
-        ...prevState,
-        ...data
-      ])
-      console.log(data,start,limit);
+      setListItems((prevState) => [...prevState, ...data]);
+      console.log(data, start, limit);
     } else {
       return { storeProducts: error };
     }
@@ -39,7 +36,26 @@ function Products({ storeProducts }) {
           <div className="card-deck">
             {listItems.map((product, index) => {
               return (
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    textAlign: 'center',
+                    backgroundColor: 'white',
+                    webkitboxshadow: '0px 4px 6px 0px rgba(0, 11, 40)',
+                    boxShadow: '0px 4px 6px 1px rgba(0, 11, 40, 0.3)',
+                    padding: '10px 10px 15px',
+                    border: '1px solid #fff',
+                    position: 'relative',
+                    overflow: 'hidden',
+                    webkittransition: 'all 0.2s linear',
+                    otransition: 'all 0.2s linear',
+                    transition: 'all 0.2s linear',
+                    cursor: 'pointer',
+                    marginRight: '-10px',
+
+                    marginBottom: '10px',
+                  }}
+                >
                   <ProductCard product={product} />
                 </div>
               );

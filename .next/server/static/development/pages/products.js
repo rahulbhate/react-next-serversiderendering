@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -884,7 +884,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/pages/products.js";
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\products.js";
 // This is the Link API
 
 
@@ -980,36 +980,52 @@ function Products(_ref) {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "card-deck",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 36
     },
     __self: this
   }, listItems.map(function (product, index) {
     return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: "col-md-4",
+      style: {
+        textAlign: 'center',
+        backgroundColor: 'white',
+        webkitboxshadow: '0px 4px 6px 0px rgba(0, 11, 40)',
+        boxShadow: '0px 4px 6px 1px rgba(0, 11, 40, 0.3)',
+        padding: '10px 10px 15px',
+        border: '1px solid #fff',
+        position: 'relative',
+        overflow: 'hidden',
+        webkittransition: 'all 0.2s linear',
+        otransition: 'all 0.2s linear',
+        transition: 'all 0.2s linear',
+        cursor: 'pointer',
+        marginRight: '-10px',
+        marginBottom: '10px'
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 39
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_src_components_ProductCard_ProductCard__WEBPACK_IMPORTED_MODULE_11__["default"], {
       product: product,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 59
       },
       __self: this
     }));
@@ -1078,7 +1094,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/Button/Button.js";
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\Button\\Button.js";
 
 
 var Button = function Button(props) {
@@ -1117,7 +1133,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/List/List.js";
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\List\\List.js";
 
 
 
@@ -1234,92 +1250,114 @@ var useInfiniteScroll = function useInfiniteScroll(callback) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Button_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Button/Button */ "./src/components/Button/Button.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Button_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Button/Button */ "./src/components/Button/Button.js");
 
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/src/components/ProductCard/ProductCard.js";
+
+
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\ProductCard\\ProductCard.js";
 
 
 
 var ProductCard = function ProductCard(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(1),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState, 2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(1),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
       quantity = _useState2[0],
       setQuantity = _useState2[1];
 
-  function handleAddToCart() {
-    var cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
-    var id = props.product.SKU;
-    var title = props.product.title;
-    var price = props.product.price;
-    cart[id] = cart[id] ? cart[id] : 0;
-    var qty = cart[id] + quantity;
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])([]),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState3, 2),
+      cart = _useState4[0],
+      setCart = _useState4[1];
 
-    if (props.product.available_quantity < qty) {
-      cart[id] = props.product.available_quantity;
-    } else {
-      cart[id] = qty;
-      cart[title] = title;
-      cart[price] = price;
-    }
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])({}),
+      _useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState5, 2),
+      cartItems = _useState6[0],
+      setCartItems = _useState6[1];
 
-    localStorage.setItem('cart', _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(cart));
-  }
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])({
+    id: props.product.SKU,
+    title: props.product.title,
+    price: props.product.price
+  }),
+      _useState8 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState7, 2),
+      product = _useState8[0],
+      setProduct = _useState8[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(0),
+      _useState10 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState9, 2),
+      counter = _useState10[0],
+      setCounter = _useState10[1];
+
+  var handleAddToCart = function handleAddToCart() {
+    console.log(product);
+    setCart(function (curr) {
+      return [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__["default"])(curr), [product]);
+    });
+    setCartItems(function (cartItems) {
+      var _objectSpread2;
+
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, cartItems, (_objectSpread2 = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_objectSpread2, 'id', props.product.SKU), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_objectSpread2, 'title', props.product.title), _objectSpread2));
+    });
+    console.log(cartItems);
+    console.log(cart);
+    setCounter(counter + 1);
+    console.log(counter);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 29
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
     src: "/static/products/product-".concat(props.product.image, ".png"),
     className: "card-img-top",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 30
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
     key: props.product.id,
     className: "card-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, props.product.title), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Button_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    type: 'primary',
-    title: 'Add To Cart',
-    onClick: handleAddToCart,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  }, props.product.title), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
+    onClick: handleAddToCart,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, "Add To Cart"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
     className: "card-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 44
     },
     __self: this
-  }, props.product.price), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  }, props.product.price), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 45
     },
     __self: this
   }, props.product.GST))));
@@ -1492,7 +1530,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/rahulbhate/projects/react-next-serversiderendering/utils/withAuthInitial.js";
+var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\utils\\withAuthInitial.js";
 
 
 
@@ -1605,14 +1643,14 @@ function withAuthInitial(AuthComponent) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!*********************************!*\
   !*** multi ./pages/products.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rahulbhate/projects/react-next-serversiderendering/pages/products.js */"./pages/products.js");
+module.exports = __webpack_require__(/*! C:\Users\rbhate\projects\react-next-serversiderendering\pages\products.js */"./pages/products.js");
 
 
 /***/ }),
