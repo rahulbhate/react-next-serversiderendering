@@ -9027,6 +9027,11 @@ function Products(_ref) {
       isFetching = _useInfiniteScroll2[0],
       setIsFetching = _useInfiniteScroll2[1];
 
+  var handleAddToCart = function handleAddToCart(product) {
+    console.log('You clicked on me');
+    console.log(product);
+  };
+
   function fetchMoreListItems() {
     return _fetchMoreListItems.apply(this, arguments);
   }
@@ -9085,25 +9090,26 @@ function Products(_ref) {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "card-deck",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 40
     },
     __self: this
   }, listItems.map(function (product, index) {
     return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      key: index,
       className: "col-md-4",
       style: {
         textAlign: 'center',
@@ -9123,14 +9129,26 @@ function Products(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 43
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_src_components_ProductCard_ProductCard__WEBPACK_IMPORTED_MODULE_11__["default"], {
       product: product,
+      onClick: handleAddToCart,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 63
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_src_components_Button_Button__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      type: 'primary',
+      title: 'Add To Cart',
+      onClick: function onClick() {
+        return handleAddToCart(product);
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64
       },
       __self: this
     }));
@@ -9361,13 +9379,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_Button_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Button/Button */ "./src/components/Button/Button.js");
 
 
 
 
 var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\src\\components\\ProductCard\\ProductCard.js";
-
 
 
 var ProductCard = function ProductCard(props) {
@@ -9395,11 +9411,6 @@ var ProductCard = function ProductCard(props) {
       product = _useState8[0],
       setProduct = _useState8[1];
 
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(0),
-      _useState10 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState9, 2),
-      counter = _useState10[0],
-      setCounter = _useState10[1];
-
   var handleAddToCart = function handleAddToCart() {
     console.log(product);
     setCart(function (curr) {
@@ -9412,14 +9423,13 @@ var ProductCard = function ProductCard(props) {
     });
     console.log(cartItems);
     console.log(cart);
-    setCounter(counter + 1);
-    console.log(counter);
   };
 
   return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    onClick: props.onClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
@@ -9427,14 +9437,14 @@ var ProductCard = function ProductCard(props) {
     className: "card-img-top",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
@@ -9442,27 +9452,20 @@ var ProductCard = function ProductCard(props) {
     className: "card-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 33
     },
     __self: this
-  }, props.product.title), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
-    onClick: handleAddToCart,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, "Add To Cart"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+  }, props.product.title), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
     className: "card-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 42
     },
     __self: this
   }, props.product.price), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 43
     },
     __self: this
   }, props.product.GST))));

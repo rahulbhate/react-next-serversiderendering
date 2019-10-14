@@ -14,6 +14,10 @@ function Products({ storeProducts }) {
   const [listItems, setListItems] = useState(storeProducts);
   const [newProds, setNewProds] = useState();
   const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
+  const handleAddToCart = (product) => {
+    console.log('You clicked on me');
+    console.log(product);
+  };
   async function fetchMoreListItems() {
     let newStart = start + limit;
     setStart(newStart);
@@ -37,6 +41,7 @@ function Products({ storeProducts }) {
             {listItems.map((product, index) => {
               return (
                 <div
+                  key={index}
                   className="col-md-4"
                   style={{
                     textAlign: 'center',
@@ -52,11 +57,15 @@ function Products({ storeProducts }) {
                     transition: 'all 0.2s linear',
                     cursor: 'pointer',
                     marginRight: '-10px',
-
                     marginBottom: '10px',
                   }}
                 >
-                  <ProductCard product={product} />
+                  <ProductCard product={product} onClick={handleAddToCart} />
+                  <Button
+                    type={'primary'}
+                    title={'Add To Cart'}
+                    onClick={() => handleAddToCart(product)}
+                  />
                 </div>
               );
             })}

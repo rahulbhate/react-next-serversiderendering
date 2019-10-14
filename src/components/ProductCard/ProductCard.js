@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../../components/Button/Button';
+
 const ProductCard = (props) => {
   const [quantity, setQuantity] = useState(1);
   const [cart, setCart] = useState([]);
@@ -9,7 +9,7 @@ const ProductCard = (props) => {
     title: props.product.title,
     price: props.product.price,
   });
-  const [counter, setCounter] = useState(0);
+
   const handleAddToCart = () => {
     console.log(product);
     setCart((curr) => [...curr, product]);
@@ -20,13 +20,11 @@ const ProductCard = (props) => {
     }));
     console.log(cartItems);
     console.log(cart);
-    setCounter(counter + 1);
-    console.log(counter);
   };
 
   return (
     <>
-      <div>
+      <div onClick={props.onClick}>
         <img
           src={`/static/products/product-${props.product.image}.png`}
           className="card-img-top"
@@ -40,7 +38,7 @@ const ProductCard = (props) => {
             title={'Add To Cart'}
             onClick={handleAddToCart}
           /> */}
-          <button onClick={handleAddToCart}>Add To Cart</button>
+          {/* <button onClick={props.handleAddToCart}>Add To Cart</button> */}
           <p className="card-text">{props.product.price}</p>
           <p>{props.product.GST}</p>
         </div>
