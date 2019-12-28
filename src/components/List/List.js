@@ -10,7 +10,7 @@ const List = () => {
   function fetchMoreListItems() {
     alert('called');
     const respon = fetch(
-      `http://localhost:8000/products?start=${start}&limit=${limit}`,
+      `${process.env.DEV_URL}/products?start=${start}&limit=${limit}`,
     );
     console.log(respon);
     setTimeout(() => {

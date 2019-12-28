@@ -1,6 +1,8 @@
 import { useReducer } from 'react';
 import axios from 'axios';
+import AuthHelperMethods from '../../../utils/AuthHelperMethods';
 const useForm = (callback) => {
+  const Auth = new AuthHelperMethods();
   const [inputValues, setInputValues] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
     {},
@@ -10,16 +12,13 @@ const useForm = (callback) => {
     // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
     if (event) event.preventDefault();
     console.log(inputValues);
-
-    axios.post(`http://localhost:8080/signup`, inputValues).then((res) => {
-      console.log(res);
-    });
-
+    Auth.signup(inputValues);
     callback();
   };
 
   const handleChange = (event) => {
     event.persist();
+    console.log(event.target.value);
     const { name, value } = event.target;
     setInputValues({ [name]: value });
   };

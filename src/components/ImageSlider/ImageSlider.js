@@ -4,23 +4,23 @@ import sliderData from '../../../src/sliderImages';
 const ImageSlider = () => {
   
   const [photos, setPhotos] = useState(sliderData);
-  console.log(photos);
+  //console.log(photos);
   const [slideCount, setSlideCount] = useState(0);
   function goToPrevSlide() {
     setSlideCount(slideCount - 1);
   }
   function goToNextSlide() {
-    console.log('called');
+    //console.log('called');
     setSlideCount(slideCount + 1);
   }
   return (
     <>
         <div className="carousel slide">
           <div className="carousel-inner">
-          
             {photos.map((option, index) => {
               return (
                 <>
+                <div>
                   {photos.indexOf(option) === slideCount ? (
                     <div>
                     
@@ -30,6 +30,7 @@ const ImageSlider = () => {
                   ) : (
                     ''
                   )}
+                  </div>
                 </>
               );
             })}

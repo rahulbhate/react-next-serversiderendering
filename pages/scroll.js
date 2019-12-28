@@ -1,7 +1,6 @@
 // This is the Link API
 import React from 'react';
 import 'isomorphic-unfetch';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import withAuthInitial from '../utils/withAuthInitial';
 import List from '../src/components/List/List';
 

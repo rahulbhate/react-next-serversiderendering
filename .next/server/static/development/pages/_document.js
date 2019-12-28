@@ -181,17 +181,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js ***!
@@ -441,36 +430,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js ***!
@@ -524,49 +483,6 @@ function _inherits(subClass, superClass) {
     }
   });
   if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
-/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
-/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-
-
-
-
-function _objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
-
-    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
-      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
-        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
-      }));
-    }
-
-    ownKeys.forEach(function (key) {
-      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
-    });
-  }
-
-  return target;
 }
 
 /***/ }),
@@ -1494,17 +1410,16 @@ module.exports = __webpack_require__(/*! ./dist/pages/_document */ "./node_modul
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
-/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -1512,8 +1427,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\\pages\\_document.js";
 
 // _document is only rendered on the server side and not on the client side
 // Event handlers like onClick can't be added to this file
@@ -1523,68 +1436,111 @@ var _jsxFileName = "C:\\Users\\rbhate\\projects\\react-next-serversiderendering\
 var MyDocument =
 /*#__PURE__*/
 function (_Document) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(MyDocument, _Document);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(MyDocument, _Document);
 
   function MyDocument() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, MyDocument);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, MyDocument);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(MyDocument).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(MyDocument).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(MyDocument, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(MyDocument, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Html"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      })));
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["Html"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["Head"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
+        crossorigin: "anonymous"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css",
+        rel: "stylesheet",
+        integrity: "sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1",
+        crossorigin: "anonymous"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/css/style.css"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Mukta:300,400,700"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/fonts/icomoon/style.css"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/css/bootstrap.min.css"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/css/magnific-popup.css"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/css/jquery-ui.css"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/css/owl.carousel.min.css"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/css/owl.theme.default.min.css"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "/static/css/aos.css"
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "static/js/jquery-3.3.1.min.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["Main"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["NextScript"], null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "https://js.stripe.com/v2/"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/checkout.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/jquery-ui.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/popper.min.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/bootstrap.min.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/owl.carousel.min.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/jquery.magnific-popup.min.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/aos.js"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
+        src: "/static/js/main.js"
+      }));
     }
   }], [{
     key: "getInitialProps",
     value: function () {
-      var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(ctx) {
-        var initialProps;
+        var originalRenderPage, initialProps;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.next = 2;
-                return next_document__WEBPACK_IMPORTED_MODULE_9___default.a.getInitialProps(ctx);
+                originalRenderPage = ctx.renderPage;
 
-              case 2:
-                initialProps = _context.sent;
-                return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, initialProps));
+                ctx.renderPage = function () {
+                  return originalRenderPage({
+                    // useful for wrapping the whole react tree
+                    enhanceApp: function enhanceApp(App) {
+                      return App;
+                    },
+                    // useful for wrapping in a per-page basis
+                    enhanceComponent: function enhanceComponent(Component) {
+                      return Component;
+                    }
+                  });
+                }; // Run the parent `getInitialProps` using `ctx` that now includes our custom `renderPage`
+
+
+                _context.next = 4;
+                return next_document__WEBPACK_IMPORTED_MODULE_8___default.a.getInitialProps(ctx);
 
               case 4:
+                initialProps = _context.sent;
+                return _context.abrupt("return", initialProps);
+
+              case 6:
               case "end":
                 return _context.stop();
             }
@@ -1601,7 +1557,7 @@ function (_Document) {
   }]);
 
   return MyDocument;
-}(next_document__WEBPACK_IMPORTED_MODULE_9___default.a);
+}(next_document__WEBPACK_IMPORTED_MODULE_8___default.a);
 
 /* harmony default export */ __webpack_exports__["default"] = (MyDocument);
 
@@ -1704,17 +1660,6 @@ module.exports = require("core-js/library/fn/object/define-property");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/get-own-property-symbols":
-/*!*********************************************************************!*\
-  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/get-own-property-symbols");
 
 /***/ }),
 

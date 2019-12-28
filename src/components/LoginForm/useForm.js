@@ -3,31 +3,46 @@ import axios from 'axios';
 import Router from 'next/router';
 import AuthHelperMethods from '../../../utils/AuthHelperMethods';
 const useForm = (callback) => {
+  
   const [token, setToken] = useState();
   const Auth = new AuthHelperMethods();
   const [inputValues, setInputValues] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
     {},
   );
-  useEffect(() => {
-    console.log('useEffect hook called');
-  });
 
   const handleSubmit = (event) => {
     console.log('Handle Submit Called');
     // Call SERVER USING FETCH METHOD and PASS STATE VALUES TO BACK END WITH POST METHOD..
     if (event) event.preventDefault();
     console.log(inputValues);
-    Auth.login(inputValues);
-    /*axios.post(`http://localhost:8080/login`, inputValues).then((res) => {
-      console.log(res.data.token);
-      const token = res.data.token;
-      localStorage.setItem('rememberMe', token);
-      setToken(token);
-      console.log(token);
-      Router.push('/secret');
-    });*/
-
+    //Auth.login(inputValues);
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(inputValues),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json;charset=UTF-8'
+      },
+    };
+    fetch(`/login`, options)
+      .then((res) => {
+        if (res.ok) {
+          return Promise.resolve(res.json());
+        } else {
+          return Promise.reject({
+            status: res.status,
+            statusText: res.statusText,
+          });
+        }
+      })
+      .then((res) => {
+        // console.log(res);
+        localStorage.setItem('Token', res.token);
+        sessionStorage.setItem('Token', res.token);
+        Router.push('/page');
+      })
+      .catch((err) => console.log('Error, with message:', err.statusText));
     callback();
   };
 

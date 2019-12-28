@@ -1,5 +1,6 @@
 import decode from 'jwt-decode';
 import Router from 'next/router';
+import 'isomorphic-unfetch';
 
 export default class AuthHelperMethods {
   // Initializing important variables
@@ -12,10 +13,11 @@ export default class AuthHelperMethods {
       method: 'POST',
       body: JSON.stringify(inputValues),
       headers: {
-        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Content-Type': 'application/json;charset=UTF-8'
       },
     };
-    fetch('http://localhost:8000/login', options)
+    fetch(`/login`, options)
       .then((res) => {
         if (res.ok) {
           return Promise.resolve(res.json());
@@ -29,16 +31,70 @@ export default class AuthHelperMethods {
       .then((res) => {
         console.log(res);
         this.setToken(res.token);
-        Router.push('/sessions');
+        Router.push('/page');
       })
       .catch((err) => console.log('Error, with message:', err.statusText));
   };
-
+contact = (inputValues) =>{
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(inputValues),
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json;charset=UTF-8'
+    },
+  };
+  fetch(`/contact`, options)
+      .then((res) => {
+        if (res.ok) {
+          return Promise.resolve(res.json());
+        } else {
+          return Promise.reject({
+            status: res.status,
+            statusText: res.statusText,
+          });
+        }
+      })
+      .then((res) => {
+        console.log(res);
+        Router.push('/contact');
+      })
+      .catch((err) => console.log('Error, with message:', err.statusText));
+};
+signup = (inputValues) => {
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(inputValues),
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json;charset=UTF-8'
+    },
+  };
+  fetch(`/signup`, options)
+      .then((res) => {
+        if (res.ok) {
+          return Promise.resolve(res.json());
+        } else {
+          return Promise.reject({
+            status: res.status,
+            statusText: res.statusText,
+          });
+        }
+      })
+      .then((res) => {
+        console.log(res);
+        Router.push('/login');
+      })
+      .catch((err) => console.log('Error, with message:', err.statusText));
+};
+checkout = (inputValues) =>{
+  console.log(inputValues);
+}
   loggedIn = () => {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken(); // Getting token from localstorage
-    console.log(token);
-    return !!token && !this.isTokenExpired(token); // handwaiving here
+    console.log(!!token && !this.isTokenExpired(token));
+    return token; // handwaiving here
   };
 
   isTokenExpired = (token) => {
@@ -57,17 +113,20 @@ export default class AuthHelperMethods {
 
   setToken = (idToken) => {
     // Saves user token to localStorage
-    localStorage.setItem('rememberMe', idToken);
+    localStorage.setItem('Token', idToken);
+    sessionStorage.setItem('Token',idToken);
   };
 
   getToken = () => {
     // Retrieves the user token from localStorage
-    return localStorage.getItem('rememberMe');
+    return localStorage.getItem('Token');
   };
 
   logout = () => {
     // Clear user token and profile data from localStorage
-    localStorage.removeItem('id_token');
+    localStorage.removeItem('Token');
+    sessionStorage.removeItem('Token');
+    Router.push('/login');
   };
 
   getConfirm = () => {

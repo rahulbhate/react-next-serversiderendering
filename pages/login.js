@@ -1,14 +1,14 @@
-import React from 'react';
-import 'isomorphic-unfetch';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect} from 'react';
 import LoginForm from '../src/components/LoginForm/LoginForm';
-
-function Login() {
+function Login(props) {
+  console.log(props);
   return (
     <div>
-      <h2>Login Form</h2>
       <LoginForm />
     </div>
   );
+}
+Login.getInitialProps = async () => {
+  
 }
 export default Login;
